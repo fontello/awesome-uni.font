@@ -1,0 +1,505 @@
+---
+# This is configuration file for font builder and other support scripts.
+# Format is descriped below.
+#
+#
+# css-prefix: "icon-"             # prefix for css-generated classes
+# demo-columns: 4                 # used for html demo page generation
+#
+# font:                           # all vars from here will be used as font
+#                                 # params in fontforge
+#                                 # http://fontforge.sourceforge.net/python.html
+#   version: "1.0"
+#
+#   # use !!!small!!! letters a-z, or Opera will fail under OS X
+#   # fontname will be also used as file name.
+#   fontname: myfont
+#
+#   fullname: MyFont
+#   familyname: Myfont
+#
+#   copyright: Copyright (C) 2012 by xxxxxxxx
+#
+#   ascent: 1638
+#   descent: 410
+#   weight: Medium
+#
+#
+#
+# # Optional. You can apply global resize + offset to all font glyphs.
+# # Param values ar 0..1, where 1 = 100%. 
+# #
+# transform:
+#   baseline: 0.2                 # baseline for rescale. Default value calculated
+#                                 # from ascent/decsent
+#   rescale: 0.68                 # rescale glyphs and center around baseline
+#   offset: -0.1                  # shift up/down
+#
+# glyphs:
+#   - glyph1_file:                # file name, without extention
+#       from: 0xNNN               # Symbol code 0x - hex, original
+#       code: 0xNNN               # Symbol code 0x - hex, remapped
+#       css: icon-gpyph1-name     # For generated CSS
+#       search: [word1, word2]    # Search aliases (array). CSS name will be
+#                                 # included automatically
+#
+#       transform:                # personal glyph transformation.
+#         rescale_rel: 0.9        # *_rel - applyed after global.
+#         offset: 0.2             # without *_rel - override global
+#
+################################################################################
+#
+# Mapping rules:
+#
+# 1. Downshift 1Fxxx -> Fxxx, because 1Fxxx codes not shown in Chrome/Opera
+#
+
+
+css-prefix: "icon-"
+demo-columns: 4
+
+transform:
+  rescale: 1.0
+  offset: 0.0
+
+font:
+  version: "None"
+
+  # use !!!small!!! letters a-z, or Opera will fail under OS X
+  # fontname will be also used as file name.
+  fontname: "FontAwesomeRegular"
+
+  fullname: "FontAwesomeRegular"
+  familyname: "FontAwesomeRegular"
+
+  copyright: "None"
+
+  ascent: 750
+  descent: 250
+  weight: "Regular"
+
+
+glyphs:
+
+  - glyph0:
+      code: 0xe000
+
+  - glyph1:
+      code: 0xf000
+
+  - glyph2:
+      code: 0xf001
+
+  - glyph3:
+      code: 0xf002
+
+  - glyph4:
+      code: 0xf003
+
+  - glyph5:
+      code: 0xf004
+
+  - glyph6:
+      code: 0xf005
+
+  - glyph7:
+      code: 0xf006
+
+  - glyph8:
+      code: 0xf007
+
+  - glyph9:
+      code: 0xf008
+
+  - glyph10:
+      code: 0xf009
+
+  - glyph11:
+      code: 0xf00a
+
+  - glyph12:
+      code: 0xf00b
+
+  - glyph13:
+      code: 0xf00c
+
+  - glyph14:
+      code: 0xf00d
+
+  - glyph15:
+      code: 0xf00e
+
+  - glyph16:
+      code: 0xf010
+
+  - glyph17:
+      code: 0xf011
+
+  - glyph18:
+      code: 0xf012
+
+  - glyph19:
+      code: 0xf013
+
+  - glyph20:
+      code: 0xf014
+
+  - glyph21:
+      code: 0xf015
+
+  - glyph22:
+      code: 0xf016
+
+  - glyph23:
+      code: 0xf017
+
+  - glyph24:
+      code: 0xf018
+
+  - glyph25:
+      code: 0xf019
+
+  - glyph26:
+      code: 0xf01a
+
+  - glyph27:
+      code: 0xf01b
+
+  - glyph28:
+      code: 0xf01c
+
+  - glyph29:
+      code: 0xf01d
+
+  - glyph30:
+      code: 0xf01e
+
+  - glyph31:
+      code: 0xf021
+
+  - glyph32:
+      code: 0xf022
+
+  - glyph33:
+      code: 0xf023
+
+  - glyph34:
+      code: 0xf024
+
+  - glyph35:
+      code: 0xf025
+
+  - glyph36:
+      code: 0xf026
+
+  - glyph37:
+      code: 0xf027
+
+  - glyph38:
+      code: 0xf028
+
+  - glyph39:
+      code: 0xf029
+
+  - glyph40:
+      code: 0xf02a
+
+  - glyph41:
+      code: 0xf02b
+
+  - glyph42:
+      code: 0xf02c
+
+  - glyph43:
+      code: 0xf02d
+
+  - glyph44:
+      code: 0xf02e
+
+  - glyph45:
+      code: 0xf02f
+
+  - glyph46:
+      code: 0xf030
+
+  - glyph47:
+      code: 0xf031
+
+  - glyph48:
+      code: 0xf032
+
+  - glyph49:
+      code: 0xf033
+
+  - glyph50:
+      code: 0xf034
+
+  - glyph51:
+      code: 0xf035
+
+  - glyph52:
+      code: 0xf036
+
+  - glyph53:
+      code: 0xf037
+
+  - glyph54:
+      code: 0xf038
+
+  - glyph55:
+      code: 0xf039
+
+  - glyph56:
+      code: 0xf03a
+
+  - glyph57:
+      code: 0xf03b
+
+  - glyph58:
+      code: 0xf03c
+
+  - glyph59:
+      code: 0xf03d
+
+  - glyph60:
+      code: 0xf03e
+
+  - glyph61:
+      code: 0xf040
+
+  - glyph62:
+      code: 0xf041
+
+  - glyph63:
+      code: 0xf042
+
+  - glyph64:
+      code: 0xf043
+
+  - glyph65:
+      code: 0xf044
+
+  - glyph66:
+      code: 0xf045
+
+  - glyph67:
+      code: 0xf046
+
+  - glyph68:
+      code: 0xf047
+
+  - glyph69:
+      code: 0xf048
+
+  - glyph70:
+      code: 0xf049
+
+  - glyph71:
+      code: 0xf04a
+
+  - glyph72:
+      code: 0xf04b
+
+  - glyph73:
+      code: 0xf04c
+
+  - glyph74:
+      code: 0xf04d
+
+  - glyph75:
+      code: 0xf04e
+
+  - glyph76:
+      code: 0xf050
+
+  - glyph77:
+      code: 0xf051
+
+  - glyph78:
+      code: 0xf052
+
+  - glyph79:
+      code: 0xf053
+
+  - glyph80:
+      code: 0xf054
+
+  - glyph81:
+      code: 0xf055
+
+  - glyph82:
+      code: 0xf056
+
+  - glyph83:
+      code: 0xf057
+
+  - glyph84:
+      code: 0xf058
+
+  - glyph85:
+      code: 0xf059
+
+  - glyph86:
+      code: 0xf05a
+
+  - glyph87:
+      code: 0xf05b
+
+  - glyph88:
+      code: 0xf05c
+
+  - glyph89:
+      code: 0xf05d
+
+  - glyph90:
+      code: 0xf05e
+
+  - glyph91:
+      code: 0xf060
+
+  - glyph92:
+      code: 0xf061
+
+  - glyph93:
+      code: 0xf062
+
+  - glyph94:
+      code: 0xf063
+
+  - glyph95:
+      code: 0xf064
+
+  - glyph96:
+      code: 0xf065
+
+  - glyph97:
+      code: 0xf066
+
+  - glyph98:
+      code: 0xf067
+
+  - glyph99:
+      code: 0xf068
+
+  - glyph100:
+      code: 0xf069
+
+  - glyph101:
+      code: 0xf06a
+
+  - glyph102:
+      code: 0xf06b
+
+  - glyph103:
+      code: 0xf06c
+
+  - glyph104:
+      code: 0xf06d
+
+  - glyph105:
+      code: 0xf06e
+
+  - glyph106:
+      code: 0xf070
+
+  - glyph107:
+      code: 0xf071
+
+  - glyph108:
+      code: 0xf072
+
+  - glyph109:
+      code: 0xf073
+
+  - glyph110:
+      code: 0xf074
+
+  - glyph111:
+      code: 0xf075
+
+  - glyph112:
+      code: 0xf076
+
+  - glyph113:
+      code: 0xf077
+
+  - glyph114:
+      code: 0xf078
+
+  - glyph115:
+      code: 0xf079
+
+  - glyph116:
+      code: 0xf07a
+
+  - glyph117:
+      code: 0xf07b
+
+  - glyph118:
+      code: 0xf07c
+
+  - glyph119:
+      code: 0xf07d
+
+  - glyph120:
+      code: 0xf07e
+
+  - glyph121:
+      code: 0xf080
+
+  - glyph122:
+      code: 0xf081
+
+  - glyph123:
+      code: 0xf082
+
+  - glyph124:
+      code: 0xf083
+
+  - glyph125:
+      code: 0xf084
+
+  - glyph126:
+      code: 0xf085
+
+  - glyph127:
+      code: 0xf086
+
+  - glyph128:
+      code: 0xf087
+
+  - glyph129:
+      code: 0xf088
+
+  - glyph130:
+      code: 0xf089
+
+  - glyph131:
+      code: 0xf08a
+
+  - glyph132:
+      code: 0xf08b
+
+  - glyph133:
+      code: 0xf08c
+
+  - glyph134:
+      code: 0xf08d
+
+  - glyph135:
+      code: 0xf08e
+
+  - glyph136:
+      code: 0xf090
+
+  - glyph137:
+      code: 0xf091
+
+  - glyph138:
+      code: 0xf092
+
+  - glyph139:
+      code: 0xf093
+
+  - glyph140:
+      code: 0xf094
