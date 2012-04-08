@@ -26,7 +26,6 @@
   height: 24px;
 }
 
-.icon-glyph0:before { content: ""; }     /* '\e000' */
 .icon-glyph1:before { content: ""; }     /* '\f000' */
 .icon-glyph2:before { content: ""; }     /* '\f001' */
 .icon-glyph3:before { content: ""; }     /* '\f002' */

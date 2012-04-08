@@ -32,7 +32,7 @@
 # transform:
 #   baseline: 0.2                 # baseline for rescale. Default value calculated
 #                                 # from ascent/decsent
-#   rescale: 0.68                 # rescale glyphs and center around baseline
+#   rescale: 0.5                  # rescale glyphs and center around baseline
 #   offset: -0.1                  # shift up/down
 #
 # glyphs:
@@ -59,18 +59,19 @@ css-prefix: "icon-"
 demo-columns: 4
 
 transform:
-  rescale: 1.0
-  offset: 0.0
+  # baseline: 0.5
+  # rescale: 1.0
+  offset: -0.05
 
 font:
-  version: "None"
+  version: "1.0"
 
   # use !!!small!!! letters a-z, or Opera will fail under OS X
   # fontname will be also used as file name.
-  fontname: "FontAwesomeRegular"
+  fontname: "fontawesome"
 
-  fullname: "FontAwesomeRegular"
-  familyname: "FontAwesomeRegular"
+  fullname: "Font Awesome"
+  familyname: "Font Awesome"
 
   copyright: "None"
 
@@ -80,9 +81,6 @@ font:
 
 
 glyphs:
-
-  - glyph0:
-      code: 0xe000
 
   - glyph1:
       code: 0xf000
