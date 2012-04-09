@@ -1,5 +1,3 @@
-# TODO: try to find ttf2eot and ttfautohint globally installed first
-
 PROJECT     := $(notdir ${PWD})
 FONT_NAME   := fontawesome
 
@@ -14,55 +12,63 @@ REMOTE_NAME ?= origin
 REMOTE_REPO ?= $(shell git config --get remote.${REMOTE_NAME}.url)
 
 
-TTF2EOT_BIN     = ./support/ttf2eot/ttf2eot
-TTFAUTOHINT_BIN = ./support/ttfautohint/frontend/ttfautohint
+# Add local versions of ttf2eot nd ttfautohint to the PATH
+PATH := $(PATH):./support/font-builder/support/ttf2eot
+PATH := $(PATH):./support/font-builder/support/ttfautohint/frontend
+PATH := $(PATH):./support/font-builder/bin
 
 
 dist: font html
 
 
 font:
-	@if test ! -f $(TTF2EOT_BIN) ; then \
+	@if test ! -d support/font-builder/bin ; then \
+		echo "font-builder binaries not found. run:" >&2 ; \
+		echo "  make support" >&2 ; \
+		exit 128 ; \
+		fi
+	@if test ! `which ttf2eot` ; then \
 		echo "ttf2eot not found. run:" >&2 ; \
 		echo "  make support" >&2 ; \
 		exit 128 ; \
 		fi
-	@if test ! -f $(TTFAUTOHINT_BIN) ; then \
+	@if test ! `which ttfautohint` ; then \
 		echo "ttfautohint not found. run:" >&2 ; \
 		echo "  make support" >&2 ; \
 		exit 128 ; \
 		fi
-	#./bin/fontbuild.py -c ./config.yml -t ./src/font_template.sfd -i ./src/svg -o ./font/$(FONT_NAME).ttf
-	./bin/font_remap.py -c ./config.yml -i ./src/original/fontawesome-webfont.svg -o ./font/$(FONT_NAME).ttf
-	./bin/font_transform.py -c ./config.yml \
-		-i ./font/$(FONT_NAME).ttf \
-		-o ./font/$(FONT_NAME)-transformed.ttf \
-	&& mv ./font/$(FONT_NAME)-transformed.ttf \
-		./font/$(FONT_NAME).ttf
-	$(TTFAUTOHINT_BIN) --latin-fallback --hinting-limit=200 --hinting-range-max=50 --symbol ./font/$(FONT_NAME).ttf ./font/$(FONT_NAME)-hinted.ttf
+	font_remap.py -c ./config.yml -i ./src/original/fontawesome-webfont.svg -o ./font/$(FONT_NAME).ttf
+	font_transform.py -c ./config.yml -i ./font/$(FONT_NAME).ttf -o ./font/$(FONT_NAME)-transformed.ttf
+	mv ./font/$(FONT_NAME)-transformed.ttf ./font/$(FONT_NAME).ttf
+	ttfautohint --latin-fallback --hinting-limit=200 --hinting-range-max=50 --symbol ./font/$(FONT_NAME).ttf ./font/$(FONT_NAME)-hinted.ttf
 	mv ./font/$(FONT_NAME)-hinted.ttf ./font/$(FONT_NAME).ttf
-	./bin/fontconvert.py -i ./font/$(FONT_NAME).ttf -o ./font
-	$(TTF2EOT_BIN) < ./font/$(FONT_NAME).ttf >./font/$(FONT_NAME).eot
+	fontconvert.py -i ./font/$(FONT_NAME).ttf -o ./font
+	ttf2eot < ./font/$(FONT_NAME).ttf >./font/$(FONT_NAME).eot
 
 
-support: $(TTF2EOT_BIN) $(TTFAUTOHINT_BIN)
+npm-deps:
+	@if test ! `which npm` ; then \
+		echo "Node.JS and NPM are required for html demo generation." >&2 ; \
+		echo "This is non-fatal error and you'll still be able to build font," >&2 ; \
+		echo "however, to build demo with >> make html << you need:" >&2 ; \
+		echo "  - Install Node.JS and NPM" >&2 ; \
+		echo "  - Run this task once again" >&2 ; \
+		else \
+		npm install -g jade js-yaml.bin ; \
+		fi
 
 
-$(TTF2EOT_BIN):
-	cd ./support/ttf2eot \
-		&& $(MAKE) ttf2eot
-
-
-$(TTFAUTOHINT_BIN):
-	cd ./support/ttfautohint \
-		&& ./configure --without-qt \
-		&& make
-	git clean -f -d ./support/ttfautohint
+support:
+	git submodule init support/font-builder
+	git submodule update support/font-builder
+	which ttf2eot ttfautohint > /dev/null || (cd support/font-builder && $(MAKE))
+	which js-yaml jade > /dev/null || $(MAKE) npm-deps
 
 
 html:
-	./bin/parse_template.py -c ./config.yml ./src/css.mustache ./font/$(FONT_NAME).css
-	./bin/parse_template.py -c ./config.yml ./src/demo.mustache ./font/demo.html
+	CONFIG=$$(js-yaml --to-json ./config.yml) && \
+		jade --pretty --obj "$$CONFIG" --out ./font ./src/demo.jade
+	fontdemo.py -c ./config.yml ./src/css.mustache ./font/$(FONT_NAME).css
 
 
 gh-pages:
@@ -80,23 +86,6 @@ gh-pages:
 		git remote add remote ${REMOTE_REPO} && \
 		git push --force remote +master:gh-pages 
 	rm -rf ${TMP_PATH}
-
-
-dev-deps:
-	@if test 0 -ne `id -u` ; then \
-		echo "root priveledges are required" >&2 ; \
-		exit 128 ; \
-		fi
-	apt-get -qq install \
-		fontforge python python-fontforge libfreetype6-dev \
-		python-yaml python-pip \
-		build-essential \
-		autoconf automake libtool
-	pip -q install pystache argparse
-
-
-clean:
-	git clean -f -x
 
 
 .SILENT: dev-deps
