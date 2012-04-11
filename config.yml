@@ -62,8 +62,8 @@ demo:
 
 transform:
   # baseline: 0.5
-  # rescale: 1.0
-  offset: -0.05
+  rescale: 2.0
+  offset: -0.2
 
 font:
   version: "1.0"
