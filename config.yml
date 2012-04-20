@@ -80,8 +80,8 @@ meta:
 
 transform:
   baseline: 0.5
-  rescale: 2.1
-  offset: 0.25
+  rescale: 1.052631579
+  offset: -0.05
 
 
 font:
@@ -96,8 +96,8 @@ font:
 
   copyright: Copyright (C) 2012 by Dave Gandy
 
-  ascent: 1638
-  descent: 410
+  ascent: 800
+  descent: 200
   weight: "Regular"
 
 
