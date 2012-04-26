@@ -111,422 +111,640 @@ font:
 
 glyphs:
 
-  - file: glyph1
+  - css: glass
     code: 0xf000
+    search: [glass]
 
-  - file: glyph2
-    code: 0xf001
+  - css: music
+    code: 0x1f3b5
+    from: 0xf001
+    search: [music, note, song, sound]
 
-  - file: glyph3
-    code: 0xf002
+  - css: search
+    code: 0x1f50d
+    from: 0xf002
+    search: [search, find]
 
-  - file: glyph4
-    code: 0xf003
+  - css: email
+    code: 0x2709
+    from: 0xf003
+    search: [mail, email]
 
-  - file: glyph5
-    code: 0xf004
 
-  - file: glyph6
-    code: 0xf005
+  - css: heart
+    code: 0x2665
+    from: 0xf004
+    search: [heart]
 
-  - file: glyph7
-    code: 0xf006
+  - css: heart-empty
+    code: 0x2661
+    from: 0xf08a
+    search: [heart]
 
-  - file: glyph8
-    code: 0xf007
 
-  - file: glyph9
-    code: 0xf008
+  - css: star
+    code: 0x2605
+    from: 0xf005
+    search: [star]
 
-  - file: glyph10
+  - css: star-empty
+    code: 0x2606
+    from: 0xf006
+    search: [star]
+
+  - css: star-half
+    code: 0xf089
+    search: [star]
+
+
+  - css: user
+    code: 0x1f464
+    from: 0xf007
+    search: [profile, contact, user]
+
+
+  - css: video
+    code: 0x1f3ac
+    from: 0xf008
+    search: [movie, video, film]
+
+  - css: videocam
+    code: 0x1f3a5
+    from: 0xf03d
+    search: [facetime, movie, video, film]
+
+  - css: camera
+    code: 0x1f4f7
+    from: 0xf030
+    search: [camera, photo]
+
+  - css: camera-alt
+    code: 0xf083
+    search: [camera, photo]
+
+  - css: picture
+    code: 0x1f304
+    from: 0xf03e
+    search: [image, picture, photo]
+
+
+  - css: th-large
     code: 0xf009
+    search: [image, list, thumbnails]
 
-  - file: glyph11
-    code: 0xf00a
+  - css: th
+    code: 0x268f
+    from: 0xf00a
+    search: [image, list, thumbnails]
 
-  - file: glyph12
-    code: 0xf00b
+  - css: list
+    code: 0x2630
+    from: 0xf00b
+    search: [list]
 
-  - file: glyph13
-    code: 0xf00c
 
-  - file: glyph14
-    code: 0xf00d
+  - css: ok
+    code: 0x2713
+    from: 0xf00c
+    search: [ok, yes, check, mark]
 
-  - file: glyph15
-    code: 0xf00e
-
-  - file: glyph16
-    code: 0xf010
-
-  - file: glyph17
-    code: 0xf011
-
-  - file: glyph18
-    code: 0xf012
-
-  - file: glyph19
-    code: 0xf013
-
-  - file: glyph20
-    code: 0xf014
-
-  - file: glyph21
-    code: 0xf015
-
-  - file: glyph22
-    code: 0xf016
-
-  - file: glyph23
-    code: 0xf017
-
-  - file: glyph24
-    code: 0xf018
-
-  - file: glyph25
-    code: 0xf019
-
-  - file: glyph26
-    code: 0xf01a
-
-  - file: glyph27
-    code: 0xf01b
-
-  - file: glyph28
-    code: 0xf01c
-
-  - file: glyph29
-    code: 0xf01d
-
-  - file: glyph30
-    code: 0xf01e
-
-  - file: glyph31
-    code: 0xf021
-
-  - file: glyph32
-    code: 0xf022
-
-  - file: glyph33
-    code: 0xf023
-
-  - file: glyph34
-    code: 0xf024
-
-  - file: glyph35
-    code: 0xf025
-
-  - file: glyph36
-    code: 0xf026
-
-  - file: glyph37
-    code: 0xf027
-
-  - file: glyph38
-    code: 0xf028
-
-  - file: glyph39
-    code: 0xf029
-
-  - file: glyph40
-    code: 0xf02a
-
-  - file: glyph41
-    code: 0xf02b
-
-  - file: glyph42
-    code: 0xf02c
-
-  - file: glyph43
-    code: 0xf02d
-
-  - file: glyph44
-    code: 0xf02e
-
-  - file: glyph45
-    code: 0xf02f
-
-  - file: glyph46
-    code: 0xf030
-
-  - file: glyph47
-    code: 0xf031
-
-  - file: glyph48
-    code: 0xf032
-
-  - file: glyph49
-    code: 0xf033
-
-  - file: glyph50
-    code: 0xf034
-
-  - file: glyph51
-    code: 0xf035
-
-  - file: glyph52
-    code: 0xf036
-
-  - file: glyph53
-    code: 0xf037
-
-  - file: glyph54
-    code: 0xf038
-
-  - file: glyph55
-    code: 0xf039
-
-  - file: glyph56
-    code: 0xf03a
-
-  - file: glyph57
-    code: 0xf03b
-
-  - file: glyph58
-    code: 0xf03c
-
-  - file: glyph59
-    code: 0xf03d
-
-  - file: glyph60
-    code: 0xf03e
-
-  - file: glyph61
-    code: 0xf040
-
-  - file: glyph62
-    code: 0xf041
-
-  - file: glyph63
-    code: 0xf042
-
-  - file: glyph64
-    code: 0xf043
-
-  - file: glyph65
-    code: 0xf044
-
-  - file: glyph66
-    code: 0xf045
-
-  - file: glyph67
-    code: 0xf046
-
-  - file: glyph68
-    code: 0xf047
-
-  - file: glyph69
-    code: 0xf048
-
-  - file: glyph70
-    code: 0xf049
-
-  - file: glyph71
-    code: 0xf04a
-
-  - file: glyph72
-    code: 0xf04b
-
-  - file: glyph73
-    code: 0xf04c
-
-  - file: glyph74
-    code: 0xf04d
-
-  - file: glyph75
-    code: 0xf04e
-
-  - file: glyph76
-    code: 0xf050
-
-  - file: glyph77
-    code: 0xf051
-
-  - file: glyph78
-    code: 0xf052
-
-  - file: glyph79
-    code: 0xf053
-
-  - file: glyph80
-    code: 0xf054
-
-  - file: glyph81
-    code: 0xf055
-
-  - file: glyph82
-    code: 0xf056
-
-  - file: glyph83
-    code: 0xf057
-
-  - file: glyph84
+  - css: ok-circle
     code: 0xf058
+    search: [ok, yes, check, mark]
 
-  - file: glyph85
-    code: 0xf059
-
-  - file: glyph86
-    code: 0xf05a
-
-  - file: glyph87
-    code: 0xf05b
-
-  - file: glyph88
-    code: 0xf05c
-
-  - file: glyph89
+  - css: ok-circle2
     code: 0xf05d
+    search: [ok, yes, check, mark]
 
-  - file: glyph90
-    code: 0xf05e
+  - css: cancel
+    code: 0x2715
+    from: 0xf00d
+    search: [close, cancel, reject]
 
-  - file: glyph91
-    code: 0xf060
+  - css: cancel-circle
+    code: 0x2716
+    from: 0xf057
+    search: [close, cancel, reject]
 
-  - file: glyph92
-    code: 0xf061
+  - css: cancel-circle2
+    code: 0xf05c
+    search: [close, cancel, reject]
 
-  - file: glyph93
-    code: 0xf062
+  - css: plus
+    code: 0x2795
+    from: 0xf067
+    search: [plus]
 
-  - file: glyph94
-    code: 0xf063
+  - css: plus-circle
+    code: 0xf055
+    search: [plus]
 
-  - file: glyph95
-    code: 0xf064
+  - css: minus
+    code: 0x2796
+    from: 0xf068
+    search: [minus]
 
-  - file: glyph96
-    code: 0xf065
+  - css: minus-circle
+    code: 0xf056
+    search: [minus]
 
-  - file: glyph97
-    code: 0xf066
+  - css: help-circle
+    code: 0xf059
+    search: [help, question]
 
-  - file: glyph98
-    code: 0xf067
+  - css: info-circle
+    code: 0xf05a
+    search: [info]
 
-  - file: glyph99
-    code: 0xf068
 
-  - file: glyph100
-    code: 0xf069
+  - css: home
+    code: 0x2302
+    from: 0xf015
+    search: [home]
 
-  - file: glyph101
+  - css: link
+    code: 0x1f517
+    from: 0xf08e
+    search: [link, url]
+
+  - css: lock
+    code: 0x1f512
+    from: 0xf023
+    search: [lock]
+
+  - css: pin
+    code: 0x1f4cc
+    from: 0xf08d
+    search: [pin, pushpin]
+
+  - css: eye
+    code: 0xf06e
+    search: [eye, subscribe]
+
+  - css: eye-off
+    code: 0xf070
+    search: [eye, unsubscribe]
+
+  - css: tag
+    code: 0xf02b
+    search: [tag, category, price, offer]
+
+  - css: tags
+    code: 0xf02c
+    search: [tag, category, price, offer]
+
+  - css: bookmark
+    code: 0x1f516
+    from: 0xf02e
+    search: [bookmark]
+
+  - css: flag
+    code: 0x2691
+    from: 0xf024
+    search: [flag]
+
+  - css: thumbs-up
+    code: 0x1f44d
+    from: 0xf087
+    search: [thumbs, up, like, vote]
+
+  - css: thumbs-down
+    code: 0x1f44e
+    from: 0xf088
+    search: [thumbs, down, unlike, vote]
+
+
+  - css: download
+    code: 0x1f4e5
+    from: 0xf019
+    search: [download]
+  - css: upload
+    code: 0x1f4e4
+    from: 0xf093
+    search: [upload]
+
+
+  - css: forward
+    code: 0x27a6
+    from: 0xf064
+    search: [forward]
+
+  - css: export
+    code: 0xf045
+    search: [export, share]
+
+  - css: pencil
+    code: 0x2703
+    from: 0xf040
+    search: [pencil, write, reply, edit]
+
+  - css: edit
+    code: 0xf044
+    search: [pencil, write, reply, edit]
+
+  - css: print
+    code: 0xf02f
+    search: [print]
+
+  - css: retweet
+    code: 0xf079
+    search: [retweet, twitter]
+
+  - css: comment
+    code: 0xf075
+    search: [comment, reply, write]
+
+  - css: chat
+    code: 0xf086
+    search: [chat, talk]
+
+
+  - css: attention
+    code: 0x26a0
+    from: 0xf071
+    search: [warning]
+  - css: attention-circle
     code: 0xf06a
 
-  - file: glyph102
-    code: 0xf06b
 
-  - file: glyph103
-    code: 0xf06c
+  - css: location
+    code: 0xf041
+    search: [location, mark, marker]
 
-  - file: glyph104
-    code: 0xf06d
 
-  - file: glyph105
-    code: 0xf06e
+  - css: trash
+    code: 0xf014
+    search: [trash, delete]
 
-  - file: glyph106
-    code: 0xf070
 
-  - file: glyph107
-    code: 0xf071
+  - css: doc
+    code: 0xf016
+    search: [doc, article]
 
-  - file: glyph108
-    code: 0xf072
+  - css: folder
+    code: 0x1f4c1
+    from: 0xf07b
+    search: [folder]
 
-  - file: glyph109
-    code: 0xf073
-
-  - file: glyph110
-    code: 0xf074
-
-  - file: glyph111
-    code: 0xf075
-
-  - file: glyph112
-    code: 0xf076
-
-  - file: glyph113
-    code: 0xf077
-
-  - file: glyph114
-    code: 0xf078
-
-  - file: glyph115
-    code: 0xf079
-
-  - file: glyph116
-    code: 0xf07a
-
-  - file: glyph117
-    code: 0xf07b
-
-  - file: glyph118
+  - css: folder-open
     code: 0xf07c
+    search: [folder]
 
-  - file: glyph119
-    code: 0xf07d
 
-  - file: glyph120
-    code: 0xf07e
+  - css: settings
+    code: 0x2699
+    from: 0xf013
+    search: [settings, cog, gear]
+  - css: settings-alt
+    code: 0x26ef
+    from: 0xf085
+    search: [settings, cog, gear]
 
-  - file: glyph121
-    code: 0xf080
 
-  - file: glyph122
-    code: 0xf081
+  - css: basket
+    code: 0xf07a
+    search: [basket, shopping, cart]
 
-  - file: glyph123
-    code: 0xf082
+  - css: calendar
+    code: 0x1f4c5
+    from: 0xf073
+    search: [calendar, date]
 
-  - file: glyph124
-    code: 0xf083
 
-  - file: glyph125
-    code: 0xf084
-
-  - file: glyph126
-    code: 0xf085
-
-  - file: glyph127
-    code: 0xf086
-
-  - file: glyph128
-    code: 0xf087
-
-  - file: glyph129
-    code: 0xf088
-
-  - file: glyph130
-    code: 0xf089
-
-  - file: glyph131
-    code: 0xf08a
-
-  - file: glyph132
+  - css: login
+    code: 0xf090
+    search: [login, signin, enter]
+  - css: logout
     code: 0xf08b
+    search: [logout, signout, exit]
 
-  - file: glyph133
+
+    # Sound
+  - css: volume-off
+    code: 0x1f507
+    from: 0xf026
+    search: [volume, sound, mute]
+
+  - css: volume-down
+    code: 0x1f509
+    from: 0xf027
+    search: [volume, sound]
+
+  - css: volume-up
+    code: 0x1f50a
+    from: 0xf028
+    search: [volume, sound]
+
+  - css: headphones
+    code: 0x1f3a7
+    from: 0xf025
+    search: [sound, music, headphones]
+
+
+  - css: clock
+    code: 0x1f554
+    from: 0xf017
+    search: [clock, time]
+
+
+  - css: block
+    code: 0x1f6ab
+    from: 0xf05e
+    search: [block, deny]
+
+
+  - css: resize-full
+    code: 0xf065
+    search: [resize, fullscreen]
+  - css: resize-small
+    code: 0xf066
+    search: [resize]
+  - css: resize-vertical
+    code: 0x2b0c
+    from: 0xf07d
+    search: [resize]
+  - css: resize-horizontal
+    code: 0x2b0d
+    from: 0xf07e
+    search: [resize]
+
+  - css: move
+    code: 0xf047
+    search: [move]
+
+  - css: zoom-in
+    code: 0xf00e
+    search: [zoom. scale, in]
+  - css: zoom-out
+    code: 0xf010
+    search: [zoom. scale, out]
+
+
+    # Arrows
+  - css: arrow-down-circle2
+    code: 0xf01a
+    search: [arrow, down, download]
+  - css: arrow-up-circle2
+    code: 0xf01b
+    search: [arrow, up, upload]
+
+
+    # Arrows
+  - css: arrow-down-open
+    code: 0xf078
+    search: [arrow, down]
+  - css: arrow-left-open
+    code: 0xf053
+    search: [arrow, left]
+  - css: arrow-right-open
+    code: 0xf054
+    search: [arrow, right]
+  - css: arrow-up-open
+    code: 0xf077
+    search: [arrow, up]
+
+
+    # Arrows
+  - css: arrow-down
+    code: 0x2193
+    from: 0xf063
+    search: [arrow, down]
+  - css: arrow-left
+    code: 0x2190
+    from: 0xf060
+    search: [arrow, left]
+  - css: arrow-right
+    code: 0x2192
+    from: 0xf061
+    search: [arrow, right]
+  - css: arrow-up
+    code: 0x2191
+    from: 0xf062
+    search: [arrow, up]
+
+
+    # Arrows
+  - css: arrow-cw
+    code: 0x27f3
+    from: 0xf01e
+    search: [reload, redo, repeat]
+
+  - css: arrows-cw
+    code: 0xf021
+    search: [reload, refresh, update]
+
+
+    # Player
+  - css: play
+    code: 0x25b6
+    from: 0xf04b
+    search: [play, player]
+  - css: play-circle2
+    code: 0xf01d
+    search: [play, player]
+  - css: stop
+    code: 0x25aa
+    from: 0xf04d
+    search: [stop, player]
+  - css: pause
+    code: 0x2389
+    from: 0xf04c
+    search: [pause, player]
+  - css: right-end
+    code: 0x23ed
+    from: 0xf051
+    search: [right, player]
+  - css: right-end-alt
+    code: 0xf050
+    search: [right, player]
+  - css: left-start
+    code: 0x23ee
+    from: 0xf048
+    search: [left, player]
+  - css: left-start-alt
+    code: 0xf049
+    search: [left, player]
+  - css: right-ff
+    code: 0x23e9
+    from: 0xf04e
+    search: [right, player]
+  - css: left-fb
+    code: 0x23ea
+    from: 0xf04a
+    search: [left, player]
+  - css: eject
+    code: 0xf052
+    search: [eject, player]
+
+
+
+  - css: target
+    code: 0x1f3af
+    from: 0xf05b
+    search: [target]
+
+  - css: shuffle
+    code: 0x1f500
+    from: 0xf074
+    search: [shuffle]
+
+  - css: signal
+    code: 0xf012
+    search: [broadcast, wifi, signal]
+
+  - css: top-list
+    code: 0x1f3c9
+    from: 0xf091
+    search: [top, trophy]
+
+
+  - css: inbox
+    code: 0xf01c
+    search: [inbox]
+
+  - css: flight
+    code: 0x2708
+    from: 0xf072
+    search: [flight, plane, airplane]
+
+  - css: leaf
+    code: 0x1f342
+    from: 0xf06c
+    search: [leaf]
+
+
+  # Editor
+  - css: font
+    code: 0xf031
+    search: [editor, font]
+
+  - css: bold
+    code: 0xf032
+    search: [editor, bold]
+
+  - css: italic
+    code: 0xf033
+    search: [editor, italic]
+
+  - css: text-height
+    code: 0xf034
+    search: [editor, height]
+
+  - css: text-width
+    code: 0xf035
+    search: [editor, width]
+
+  - css: align-left
+    code: 0xf036
+    search: [editor, align, left]
+
+  - css: align-center
+    code: 0xf037
+    search: [editor, align, center]
+
+  - css: align-right
+    code: 0xf038
+    search: [editor, align, right]
+
+  - css: align-justify
+    code: 0xf039
+    search: [editor, align, justify]
+
+  - css: list
+    code: 0xf03a
+    search: [editor, list]
+
+  - css: indent-left
+    code: 0xf03b
+    search: [editor, indent]
+
+  - css: indent-right
+    code: 0xf03c
+    search: [editor, indent]
+
+
+  # Assorted
+  - css: off
+    code: 0xf011
+    search: [off]
+
+  - css: road
+    code: 0xf018
+    search: [road]
+
+  - css: list-alt
+    code: 0xf022
+    search: [list]
+
+  - css: qrcode
+    code: 0xf029
+    search: [qrcode]
+
+  - css: barcode
+    code: 0xf02a
+    search: [barcode]
+
+  - css: book
+    code: 0x1f4d5
+    from: 0xf02d
+    search: [book]
+
+  - css: ajust
+    code: 0xf042
+    search: [ajust]
+
+  - css: tint
+    code: 0xf043
+    search: [tint]
+
+  - css: check
+    code: 0x2611
+    from: 0xf046
+    search: [check]
+
+  - css: asterisk
+    code: 0x2731
+    from: 0xf069
+    search: [asterisk]
+
+  - css: gift
+    code: 0x1f381
+    from: 0xf06b
+    search: [gift, present]
+
+  - css: fire
+    code: 0x1f525
+    from: 0xf06d
+    search: [fire]
+
+  - css: magnet
+    code: 0xf076
+    search: [magnet]
+
+  - css: chart-bar
+    code: 0x1f4ca
+    from: 0xf080
+    search: [chart, bar, diagram]
+
+  - css: key
+    code: 0x26bf
+    from: 0xf084
+    search: [key]
+
+
+  # Logos
+  - css: github
+    code: 0xf092
+  - css: twitter
+    code: 0xf081
+    search: [twitter]
+  - css: facebook
+    code: 0xf082
+    search: [facebook]
+  - css: linkedin
     code: 0xf08c
 
-  - file: glyph134
-    code: 0xf08d
 
-  - file: glyph135
-    code: 0xf08e
-
-  - file: glyph136
-    code: 0xf090
-
-  - file: glyph137
-    code: 0xf091
-
-  - file: glyph138
-    code: 0xf092
-
-  - file: glyph139
-    code: 0xf093
-
-  - file: glyph140
-    code: 0xf094
+  - css: lemon
+    code: 0x1f34b
+    from: 0xf094
