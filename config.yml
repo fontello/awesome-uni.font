@@ -125,7 +125,7 @@ glyphs:
     from: 0xf002
     search: [search, find]
 
-  - css: email
+  - css: mail
     code: 0x2709
     from: 0xf003
     search: [mail, email]
@@ -307,7 +307,6 @@ glyphs:
     code: 0x1f44d
     from: 0xf087
     search: [thumbs, up, like, vote]
-
   - css: thumbs-down
     code: 0x1f44e
     from: 0xf088
@@ -387,15 +386,16 @@ glyphs:
     search: [folder]
 
   - css: folder-open
-    code: 0xf07c
+    code: 0x1f4c2
+    from: 0xf07c
     search: [folder]
 
 
-  - css: settings
+  - css: cog
     code: 0x2699
     from: 0xf013
     search: [settings, cog, gear]
-  - css: settings-alt
+  - css: cog-alt
     code: 0x26ef
     from: 0xf085
     search: [settings, cog, gear]
@@ -481,50 +481,50 @@ glyphs:
 
 
     # Arrows
-  - css: arrow-down-circle2
+  - css: down-circle2
     code: 0xf01a
     search: [arrow, down, download]
-  - css: arrow-up-circle2
+  - css: up-circle2
     code: 0xf01b
     search: [arrow, up, upload]
 
 
     # Arrows
-  - css: arrow-down-open
+  - css: down-open
     code: 0xf078
     search: [arrow, down]
-  - css: arrow-left-open
+  - css: left-open
     code: 0xf053
     search: [arrow, left]
-  - css: arrow-right-open
+  - css: right-open
     code: 0xf054
     search: [arrow, right]
-  - css: arrow-up-open
+  - css: up-open
     code: 0xf077
     search: [arrow, up]
 
 
     # Arrows
-  - css: arrow-down
+  - css: down
     code: 0x2193
     from: 0xf063
     search: [arrow, down]
-  - css: arrow-left
+  - css: left
     code: 0x2190
     from: 0xf060
     search: [arrow, left]
-  - css: arrow-right
+  - css: right
     code: 0x2192
     from: 0xf061
     search: [arrow, right]
-  - css: arrow-up
+  - css: up
     code: 0x2191
     from: 0xf062
     search: [arrow, up]
 
 
     # Arrows
-  - css: arrow-cw
+  - css: cw
     code: 0x27f3
     from: 0xf01e
     search: [reload, redo, repeat]
@@ -532,6 +532,11 @@ glyphs:
   - css: arrows-cw
     code: 0xf021
     search: [reload, refresh, update]
+
+  - css: shuffle
+    code: 0x1f500
+    from: 0xf074
+    search: [shuffle]
 
 
     # Player
@@ -550,25 +555,25 @@ glyphs:
     code: 0x2389
     from: 0xf04c
     search: [pause, player]
-  - css: right-end
+  - css: to-end
     code: 0x23ed
     from: 0xf051
     search: [right, player]
-  - css: right-end-alt
+  - css: to-end-alt
     code: 0xf050
     search: [right, player]
-  - css: left-start
+  - css: to-start
     code: 0x23ee
     from: 0xf048
     search: [left, player]
-  - css: left-start-alt
+  - css: to-start-alt
     code: 0xf049
     search: [left, player]
-  - css: right-ff
+  - css: fast-fw
     code: 0x23e9
     from: 0xf04e
     search: [right, player]
-  - css: left-fb
+  - css: fast-bw
     code: 0x23ea
     from: 0xf04a
     search: [left, player]
@@ -583,19 +588,14 @@ glyphs:
     from: 0xf05b
     search: [target]
 
-  - css: shuffle
-    code: 0x1f500
-    from: 0xf074
-    search: [shuffle]
-
   - css: signal
     code: 0xf012
     search: [broadcast, wifi, signal]
 
-  - css: top-list
+  - css: award
     code: 0x1f3c9
     from: 0xf091
-    search: [top, trophy]
+    search: [top, trophy, prize, award]
 
 
   - css: inbox
@@ -664,9 +664,9 @@ glyphs:
 
 
   # Assorted
-  - css: off
+  - css: "off"
     code: 0xf011
-    search: [off]
+    search: ["off"]
 
   - css: road
     code: 0xf018
@@ -710,7 +710,7 @@ glyphs:
   - css: gift
     code: 0x1f381
     from: 0xf06b
-    search: [gift, present]
+    search: [gift, present, package, box]
 
   - css: fire
     code: 0x1f525
@@ -727,7 +727,7 @@ glyphs:
     search: [chart, bar, diagram]
 
   - css: key
-    code: 0x26bf
+    code: 0x1f511
     from: 0xf084
     search: [key]
 
