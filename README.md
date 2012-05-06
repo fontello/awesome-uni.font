@@ -10,9 +10,11 @@ Info
 Difference from original:
 
 - mapped to fit unicode 6.1 standard (where possible)
-- hinted with `ttfautohint`
-- better demo page + css
-
+- realigned from baseline to middle line of small letters
+- rehinted with `ttfautohint`
+- grouped glyphs on demo page, for convenience
+  (and synced order with other iconic fonts)
+- changed css glyphs names, to be more semantic
 
 License
 -------
