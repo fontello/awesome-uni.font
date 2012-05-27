@@ -45,7 +45,7 @@
 .icon-picture:before { content: "🌄"; } /* '\1f304' */
 .icon-th-large:before { content: ""; } /* '\e708' */
 .icon-th:before { content: "⚏"; } /* '\268f' */
-.icon-list:before { content: "☰"; } /* '\2630' */
+.icon-th-list:before { content: "☰"; } /* '\2630' */
 .icon-ok:before { content: "✓"; } /* '\2713' */
 .icon-ok-circle:before { content: "✔"; } /* '\2714' */
 .icon-ok-circle2:before { content: ""; } /* '\e702' */

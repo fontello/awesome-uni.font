@@ -218,7 +218,7 @@ glyphs:
     from: 0xf00a
     search: [image, list, thumbnails]
 
-  - css: list
+  - css: th-list
     code: 0x2630
     uid: f805bb95d40c7ef2bc51b3d50d4f2e5c
     from: 0xf00b
@@ -661,7 +661,7 @@ glyphs:
     code: 0xe760
     uid: a73c5deb486c8d66249811642e5d719a
     from: 0xf021
-    search: [reload, refresh, update]
+    search: [reload, refresh, update, sync]
 
   - css: shuffle
     code: 0x1f500
