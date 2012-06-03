@@ -187,6 +187,12 @@ glyphs:
     from: 0xf03d
     search: [facetime, movie, video, film]
 
+  - css: picture
+    code: 0x1f304
+    uid: 381da2c2f7fd51f8de877c044d7f439d
+    from: 0xf03e
+    search: [image, picture, photo]
+
   - css: camera
     code: 0x1f4f7
     uid: dc3f1d5b1d006f7f7b3b6295eccab9da
@@ -198,12 +204,6 @@ glyphs:
     uid: 9d3d9d6ce1ec63eaa26281e6162853c9
     from: 0xf083
     search: [camera, photo]
-
-  - css: picture
-    code: 0x1f304
-    uid: 381da2c2f7fd51f8de877c044d7f439d
-    from: 0xf03e
-    search: [image, picture, photo]
 
 
   - css: th-large
@@ -882,7 +882,7 @@ glyphs:
     code: 0xe793
     uid: ca90da02d2c6a3183f2458e4dc416285
     from: 0xf042
-    search: [ajust]
+    search: [ajust, contrast]
 
   - css: tint
     code: 0xe794

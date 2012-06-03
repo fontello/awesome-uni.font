@@ -40,9 +40,9 @@
 .icon-user:before { content: "👤"; } /* '\1f464' */
 .icon-video:before { content: "🎬"; } /* '\1f3ac' */
 .icon-videocam:before { content: "🎥"; } /* '\1f3a5' */
+.icon-picture:before { content: "🌄"; } /* '\1f304' */
 .icon-camera:before { content: "📷"; } /* '\1f4f7' */
 .icon-camera-alt:before { content: ""; } /* '\e70f' */
-.icon-picture:before { content: "🌄"; } /* '\1f304' */
 .icon-th-large:before { content: ""; } /* '\e708' */
 .icon-th:before { content: "⚏"; } /* '\268f' */
 .icon-th-list:before { content: "☰"; } /* '\2630' */
