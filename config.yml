@@ -11,8 +11,8 @@
 #  email: ...
 #  twitter: http://twitter.com/...
 #  dribble: http://dribbble.com/...
-#  licence: SIL
-#  licence_url: http://scripts.sil.org/OFL
+#  license: SIL
+#  license_url: http://scripts.sil.org/OFL
 #
 #   css-prefix: "icon-"             # prefix for css-generated classes
 #   demo-columns: 4                 # used for html demo page generation
@@ -80,8 +80,8 @@ meta:
   email: dave@davegandy.com
   twitter: http://twitter.com/fortaweso_me/
   github: https://github.com/FortAwesome/Font-Awesome
-  licence: CC BY 3.0
-  licence_url: http://creativecommons.org/licenses/by/3.0/
+  license: CC BY 3.0
+  license_url: http://creativecommons.org/licenses/by/3.0/
 
   css_prefix: "icon-"
   columns: 4
