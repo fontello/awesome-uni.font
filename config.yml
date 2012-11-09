@@ -69,7 +69,7 @@
 # #
 # src_fonts:
 #   first_font_alias: "/absolute/path/to/first/font.ttf"
- 
+#
 ################################################################################
 #
 
@@ -88,8 +88,8 @@ meta:
 
 transform:
   baseline: 0.5
-  rescale: 1.052631579
-  offset: -0.05
+  rescale: 1.053
+  # offset: -0.05
 
 
 font:
@@ -104,8 +104,8 @@ font:
 
   copyright: Copyright (C) 2012 by Dave Gandy
 
-  ascent: 800
-  descent: 200
+  ascent: 850
+  descent: 150
   weight: "Regular"
 
 
