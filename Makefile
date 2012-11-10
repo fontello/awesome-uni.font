@@ -20,6 +20,11 @@ PATH := $(PATH):./support/font-builder/bin
 
 dist: font html
 
+dump:
+	rm -r ./src/svg/
+	mkdir ./src/svg/
+	font-dump.js --hcrop --vcenter -c config.yml -f -i ./src/original/fontawesome-webfont.svg -o ./src/svg/ -d diff.yml
+
 
 font:
 	@if test ! -d support/font-builder/bin ; then \
