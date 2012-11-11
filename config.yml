@@ -129,10 +129,16 @@ glyphs:
     from: 0xf002
     search: [search, find]
 
-  - css: mail
+  -
+    css: mail
     code: 0x2709
     uid: bf882b30900da12fca090d9796bc3030
     from: 0xf003
+    search: [mail, email]
+  -
+    css: mail-alt
+    code: 0xf0e0
+    uid: ccc2329632396dc096bb638d4b46fb98
     search: [mail, email]
 
 
@@ -168,11 +174,23 @@ glyphs:
     search: [star]
 
 
-  - css: user
+  -
+    css: user
     code: 0x1f464
     uid: 8b80d36d4ef43889db10bc1f0dc9a862
     from: 0xf007
     search: [profile, contact, user]
+  -
+    css: users
+    code: 0x1f465
+    from: 0xf0c0
+    uid: 31972e4e9d080eaa796290349ae6c1fd
+    search: [users, contacts, friends]
+  -
+    css: user-md
+    code: 0xf200
+    uid: 82116c1c568d0b0383ee849662e57bae
+    search: [user, medic]
 
 
   - css: video
@@ -298,24 +316,47 @@ glyphs:
     search: [info]
 
 
-  - css: home
+  -
+    css: home
     code: 0x2302
     uid: d7271d490b71df4311e32cdacae8b331
     from: 0xf015
     search: [home]
 
-  - css: link-ext
+  -
+    css: link
+    code: 0x1f517
+    from: 0xf0c1
+    uid: 0ddd3e8201ccc7d41f7b7c9d27eca6c1
+    search: [link]
+  -
+    css: link-ext
     code: 0xf08e
     uid: e15f0d620a7897e2035c18c80142f6d9
     search: [link, url]
 
-  - css: lock
+  -
+    css: attach
+    code: 0x1f4ce
+    from: 0xf0c6
+    uid: 0d6ab6194c0eddda2b8c9cedf2ab248e
+    search: [attach, clip]
+
+  -
+    css: lock
     code: 0x1f512
     uid: c1f1975c885aa9f3dad7810c53b82074
     from: 0xf023
     search: [lock]
+  -
+    css: lock-open
+    code: 0x1f513
+    from: 0xf09c
+    uid: 657ab647f6248a6b57a5b893beaf35a9
+    search: [lock, open, unlock]
 
-  - css: pin
+  -
+    css: pin
     code: 0x1f4cc
     uid: 5b0772e9484a1a11646793a82edd622a
     from: 0xf08d
@@ -345,10 +386,16 @@ glyphs:
     from: 0xf02c
     search: [tag, category, price, offer]
 
-  - css: bookmark
+  -
+    css: bookmark
     code: 0x1f516
     uid: f04a5d24e9e659145b966739c4fde82a
     from: 0xf02e
+    search: [bookmark]
+  -
+    css: bookmark-empty
+    code: 0xf097
+    uid: 2f5ef6f6b7aaebc56458ab4e865beff5
     search: [bookmark]
 
   - css: flag
@@ -430,12 +477,31 @@ glyphs:
     search: [chat, talk]
 
 
-  - css: attention
+  -
+    css: comment
+    code: 0xf0e5
+    uid: 9c1376672bb4f1ed616fdd78a23667e9
+    search: [comment, reply, write]
+  -
+    css: chat
+    code: 0xf0e6
+    uid: 31951fbb9820ed0690f675b3d495c8da
+    search: [chat, talk]
+
+  -
+    css: bell
+    code: 0x1f514
+    from: 0xf0a2
+    uid: cd21cbfb28ad4d903cede582157f65dc
+    search: [alert, bell, jingle]
+  -
+    css: attention
     code: 0x26a0
     uid: c76b7947c957c9b78b11741173c8349b
     from: 0xf071
     search: [attention, warning, alert]
-  - css: attention-circle
+  -
+    css: attention-circle
     code: 0x2757
     uid: b035c28eba2b35c6ffe92aee8b0df507
     from: 0xf06a
@@ -456,10 +522,16 @@ glyphs:
     search: [trash, delete]
 
 
-  - css: doc
+  -
+    css: doc
     code: 0x1f4c4
     uid: 1b5a5d7b7e3c71437f5a26befdd045ed
     from: 0xf016
+    search: [doc, article]
+  -
+    css: docs
+    code: 0xf0c5
+    uid: c8585e1e5b0467f28b70bce765d5840c
     search: [doc, article]
 
   - css: folder
@@ -475,16 +547,50 @@ glyphs:
     search: [folder]
 
 
-  - css: cog
+  -
+    css: rss
+    code: 0xf09e
+    uid: 72b1277834cba5b7944b0a6cac7ddb0d
+    search: [rss]
+
+  -
+    css: phone
+    code: 0x1f4de
+    from: 0xf095
+    uid: 9f7e588c66cfd6891f6f507cf6f6596b
+    search: [phone, telephone, call]
+  -
+    css: phone-squared
+    code: 0xf098
+    uid: ec488dfd1f548948c09671ca5a60ec92
+    search: [phone]
+
+
+  -
+    css: menu
+    code: 0xf0c9
+    uid: 559647a6f430b3aeadbecd67194451dd
+    search: [menu]
+
+
+  -
+    css: cog
     code: 0x2699
     uid: e99461abfef3923546da8d745372c995
     from: 0xf013
     search: [settings, cog, gear]
-  - css: cog-alt
+  - 
+    css: cog-alt
     code: 0x26ef
     uid: 98687378abd1faf8f6af97c254eb6cd6
     from: 0xf085
     search: [settings, cog, gear]
+  -
+    css: wrench
+    code: 0x1f527
+    from: 0xf0ad
+    uid: 5bb103cd29de77e0e06a52638527b575
+    search: [wrench, tools, settings]
 
 
   - css: basket
@@ -552,22 +658,31 @@ glyphs:
     search: [block, deny]
 
 
-  - css: resize-full
+  -
+    css: resize-full
     code: 0xe744
     uid: e594fc6e5870b4ab7e49f52571d52577
     from: 0xf065
     search: [resize, fullscreen]
-  - css: resize-small
+  -
+    css: resize-full-alt
+    code: 0xf0b2
+    uid: b013f6403e5ab0326614e68d1850fd6b
+    search: [resize, fullscreen]
+  -
+    css: resize-small
     code: 0xe746
     uid: 3c24ee33c9487bbf18796ca6dffa1905
     from: 0xf066
     search: [resize]
-  - css: resize-vertical
+  -
+    css: resize-vertical
     code: 0x2b0c
     uid: d3b3f17bc3eb7cd809a07bbd4d178bee
     from: 0xf07d
     search: [resize]
-  - css: resize-horizontal
+  -
+    css: resize-horizontal
     code: 0x2b0d
     uid: 3c73d058e4589b65a8d959c0fc8f153d
     from: 0xf07e
@@ -603,6 +718,32 @@ glyphs:
     search: [arrow, up, upload]
 
 
+  -
+    css: down-dir
+    code: 0x25be
+    from: 0xf0d7
+    uid: 2d6150442079cbda7df64522dc24f482
+    search: [down, arrow]
+  -
+    css: up-dir
+    code: 0x25b4
+    from: 0xf0d8
+    uid: 80cd1022bd9ea151d554bec1fa05f2de
+    search: [up, arrow]
+  -
+    css: left-dir
+    code: 0x25c2
+    from: 0xf0d9
+    uid: 9dc654095085167524602c9acc0c5570
+    search: [left, arrow]
+  -
+    css: right-dir
+    code: 0x25b8
+    from: 0xf0da
+    uid: fb1c799ffe5bf8fb7f8bcb647c8fe9e6
+    search: [right, arrow]
+
+
     # Arrows
   - css: down-open
     code: 0xe75c
@@ -627,34 +768,91 @@ glyphs:
 
 
     # Arrows
-  - css: down
+  -
+    css: down
     code: 0x2193
     uid: 1c4068ed75209e21af36017df8871802
     from: 0xf063
     search: [arrow, down]
-  - css: left
+  -
+    css: left
     code: 0x2190
     uid: 555ef8c86832e686fef85f7af2eb7cde
     from: 0xf060
     search: [arrow, left]
-  - css: right
+  -
+    css: right
     code: 0x2192
     uid: ad6b3fbb5324abe71a9c0b6609cbb9f1
     from: 0xf061
     search: [arrow, right]
-  - css: up
+  -
+    css: up
     code: 0x2191
     uid: 95376bf082bfec6ce06ea1cda7bd7ead
     from: 0xf062
     search: [arrow, up]
 
+  -
+    css: right-hand
+    code: 0x261e
+    from: 0xf0a4
+    uid: aa0d9175a3919a260a4012d560e9f01e
+    search: [hand, right, arrow]
+  -
+    css: left-hand
+    code: 0x261c
+    from: 0xf0a5
+    uid: 3d99d345645f43e31e9e0fd48be37e9c
+    search: [hand, left, arrow]
+  -
+    css: up-hand
+    code: 0x261d
+    from: 0xf0a6
+    uid: 034e645aa3bad56ce68389a816547c87
+    search: [hand, up, arrow]
+  -
+    css: down-hand
+    code: 0x261f
+    from: 0xf0a7
+    uid: beb43b8df442eac4b8d35f528d5ed5af
+    search: [hand, down, arrow]
+
+  -
+    css: left-circled
+    code: 0xf0a8
+    uid: 6855131631509e8795730ce062045ea1
+    search: [left, arrow]
+  -
+    css: right-circled
+    code: 0xf0a9
+    uid: 19b04848ae7332d2c0ea2a9e19064037
+    search: [right, arrow]
+  -
+    css: up-circled
+    code: 0xf0aa
+    uid: 2b8e9b027181aafd210bf29c5486d4a0
+    search: [up, arrow]
+  -
+    css: down-circled
+    code: 0xf0ab
+    uid: 55ae6ea25cd707fe34af5b52b2001cdc
+    search: [down, arrow]
+
 
     # Arrows
-  - css: cw
+  -
+    css: cw
     code: 0x27f3
     uid: bc71f4c6e53394d5ba46b063040014f1
     from: 0xf01e
     search: [reload, redo, repeat]
+  -
+    css: ccw
+    code: 0x27f2
+    from: 0xf0e2
+    uid: f9c3205df26e7778abac86183aefdc99
+    search: [reload, undo, arrow]
 
   - css: arrows-cw
     code: 0xe760
@@ -747,13 +945,40 @@ glyphs:
     search: [top, trophy, prize, award]
 
 
-  - css: inbox
+  -
+    css: inbox
     code: 0xe777
     uid: c7a75a25880928fe76981a53eca4f926
     from: 0xf01c
     search: [inbox]
 
-  - css: flight
+  -
+    css: globe
+    code: 0x1f30e
+    from: 0xf0ac
+    uid: 197375a3cea8cb90b02d06e4ddf1433d
+    search: [globe]
+  -
+    css: cloud
+    code: 0x2601
+    from: 0xf0c2
+    uid: 2c413e78faf1d6631fd7b094d14c2253
+    search: [cloud]
+  -
+    css: flash
+    code: 0x26a1
+    from: 0xf0e7
+    uid: 3212f42c65d41ed91cb435d0490e29ed
+    search: [flash, bolt]
+  -
+    css: umbrella
+    code: 0x2602
+    from: 0xf0e9
+    uid: 24ca41ab002c09de6e89b28f9d599508
+    search: [umbrella]
+
+  -
+    css: flight
     code: 0x2708
     uid: 297fe6c2ef08198b03d706ba52f51b7f
     from: 0xf072
@@ -839,6 +1064,56 @@ glyphs:
     from: 0xf03c
     search: [editor, indent]
 
+  -
+    css: list-bullet
+    code: 0xf0ca
+    uid: a2a74f5e7b7d9ba054897d8c795a326a
+    search: [list]
+  -
+    css: list-numbered
+    code: 0xf0cb
+    uid: f6766a8b042c2453a4e153af03294383
+    search: [list]
+  -
+    css: strike
+    code: 0xf0cc
+    uid: 61c242c9e2134d5864d7fdd57b3c9289
+    search: [strike]
+  -
+    css: underline
+    code: 0xf0cd
+    uid: d4a4a38a40b728f46dad1de4ac950231
+    search: [underline]
+  -
+    css: table
+    code: 0xf0ce
+    uid: 8fb55fd696d9a0f58f3b27c1d8633750
+    search: [table]
+  -
+    css: columns
+    code: 0xf0db
+    uid: 53dd31a6cc6438192b2d7b09b1c1dd45
+    search: [columns]
+
+  -
+    css: scissors
+    code: 0x2702
+    from: 0xf0c4
+    uid: 8772331a9fec983cdb5d72902a6f9e0e
+    search: [scissors, cut]
+  -
+    css: paste
+    code: 0xf0ea
+    uid: b429436ec5a518c78479d44ef18dbd60
+    search: [paste]
+
+  -
+    css: briefcase
+    code: 0x1f4bc
+    from: 0xf0b1
+    uid: 053b757d97042e1c94276200c7b64b91
+    search: [briefcase]
+
 
   # Assorted
   - css: "off"
@@ -889,11 +1164,17 @@ glyphs:
     from: 0xf043
     search: [tint]
 
-  - css: check
+  -
+    css: check
     code: 0x2611
     uid: dd6c6b221a1088ff8a9b9cd32d0b3dd5
     from: 0xf046
     search: [check]
+  -
+    css: check-empty
+    code: 0xf096
+    uid: 4b900d04e8ab8c82f080c1cfbac5772c
+    search: [check, empty]
 
   - css: asterisk
     code: 0x2731
@@ -919,93 +1200,13 @@ glyphs:
     from: 0xf076
     search: [magnet]
 
-  - css: chart-bar
+  -
+    css: chart-bar
     code: 0x1f4ca
     uid: 266d5d9adf15a61800477a5acf9a4462
     from: 0xf080
     search: [chart, bar, diagram]
 
-  - css: key
-    code: 0x1f511
-    uid: f2aa28a2548ed3d2be718d087b65ee21
-    from: 0xf084
-    search: [key]
-
-
-  # Logos
-  - css: github-squared
-    code: 0xf300
-    uid: 0ece9a12de796b8411f868d582bee678
-    from: 0xf092
-    search: [github]
-  - css: twitter-squared
-    code: 0xf304
-    uid: 906348dc798a0d42715cc97c875e3ac6
-    from: 0xf081
-    search: [twitter]
-  - css: facebook-squared
-    code: 0xf308
-    uid: 4743b088aa95d6f3b6b990e770d3b647
-    from: 0xf082
-    search: [facebook]
-  - css: linkedin-squared
-    code: 0xf30c
-    uid: 1145676a91138011729fa2909997af66
-    from: 0xf08c
-    search: [linkedin]
-
-
-  - css: lemon
-    code: 0x1f34b
-    uid: 5e0191587645a9f5d514ed4b0a0e008a
-    from: 0xf094
-
-
-
-
-
-  -
-    css: phone
-    code: 0x1f4de
-    from: 0xf095
-    uid: 9f7e588c66cfd6891f6f507cf6f6596b
-    search: [phone, telephone, call]
-  -
-    css: check-empty
-    code: 0xf096
-    uid: 4b900d04e8ab8c82f080c1cfbac5772c
-    search: [check, empty]
-  -
-    css: bookmark-empty
-    code: 0xf097
-    uid: 2f5ef6f6b7aaebc56458ab4e865beff5
-    search: [bookmark]
-  -
-    css: phone-squared
-    code: 0xf098
-    uid: ec488dfd1f548948c09671ca5a60ec92
-    search: [phone]
-  -
-    css: twitter
-    code: 0xf099
-    uid: 627abcdb627cb1789e009c08e2678ef9
-    search: [twitter]
-  -
-    css: facebook
-    code: 0xf09a
-    uid: 8e04c98c8f5ca0a035776e3001ad2638
-    search: [facebook]
-  -
-    css: github
-    code: 0xf09b
-    uid: 0f6a2573a7b6df911ed199bb63717e27
-    search: [github]
-  -
-    css: lock-open
-    code: 0x1f513
-    from: 0xf09c
-    uid: 657ab647f6248a6b57a5b893beaf35a9
-    search: [lock, open, unlock]
   -
     css: credit-card
     code: 0x1f4b3
@@ -1013,15 +1214,11 @@ glyphs:
     uid: 3d8cc269fdad8a4cda55a20542a84e5c
     search: [card, plastic, credit]
   -
-    css: rss
-    code: 0xf09e
-    uid: 72b1277834cba5b7944b0a6cac7ddb0d
-    search: [rss]
-  -
-    css: hdd
-    code: 0xf0a0
-    uid: 795efd07cd5205b589c883916a76cff0
-    search: [hdd, drive, disk]
+    css: floppy
+    code: 0x1f4be
+    from: 0xf0c7
+    uid: f4445feb55521283572ee88bc304f928
+    search: [floppy, save]
   -
     css: megaphone
     code: 0x1f4e3
@@ -1029,72 +1226,23 @@ glyphs:
     uid: 3e674995cacc2b09692c096ea7eb6165
     search: [megaphone, bullhorn]
   -
-    css: bell
-    code: 0x1f514
-    from: 0xf0a2
-    uid: cd21cbfb28ad4d903cede582157f65dc
-    search: [alert, bell, jingle]
+    css: hdd
+    code: 0xf0a0
+    uid: 795efd07cd5205b589c883916a76cff0
+    search: [hdd, drive, disk]
+
+  -
+    css: key
+    code: 0x1f511
+    uid: f2aa28a2548ed3d2be718d087b65ee21
+    from: 0xf084
+    search: [key]
+
   -
     css: certificate
     code: 0xf0a3
     uid: d61be837c725a299b432dcbee2ecdae6
     search: [certificate]
-  -
-    css: right-hand
-    code: 0x261e
-    from: 0xf0a4
-    uid: aa0d9175a3919a260a4012d560e9f01e
-    search: [hand, right, arrow]
-  -
-    css: left-hand
-    code: 0x261c
-    from: 0xf0a5
-    uid: 3d99d345645f43e31e9e0fd48be37e9c
-    search: [hand, left, arrow]
-  -
-    css: up-hand
-    code: 0x261d
-    from: 0xf0a6
-    uid: 034e645aa3bad56ce68389a816547c87
-    search: [hand, up, arrow]
-  -
-    css: down-hand
-    code: 0x261f
-    from: 0xf0a7
-    uid: beb43b8df442eac4b8d35f528d5ed5af
-    search: [hand, down, arrow]
-  -
-    css: left-circled
-    code: 0xf0a8
-    uid: 6855131631509e8795730ce062045ea1
-    search: [left, arrow]
-  -
-    css: right-circled
-    code: 0xf0a9
-    uid: 19b04848ae7332d2c0ea2a9e19064037
-    search: [right, arrow]
-  -
-    css: up-circled
-    code: 0xf0aa
-    uid: 2b8e9b027181aafd210bf29c5486d4a0
-    search: [up, arrow]
-  -
-    css: down-circled
-    code: 0xf0ab
-    uid: 55ae6ea25cd707fe34af5b52b2001cdc
-    search: [down, arrow]
-  -
-    css: globe
-    code: 0x1f30e
-    from: 0xf0ac
-    uid: 197375a3cea8cb90b02d06e4ddf1433d
-    search: [globe]
-  -
-    css: wrench
-    code: 0x1f527
-    from: 0xf0ad
-    uid: 5bb103cd29de77e0e06a52638527b575
-    search: [wrench, tools, settings]
   -
     css: tasks
     code: 0xf0ae
@@ -1106,97 +1254,10 @@ glyphs:
     uid: 4109c474ff99cad28fd5a2c38af2ec6f
     search: [filter]
   -
-    css: briefcase
-    code: 0x1f4bc
-    from: 0xf0b1
-    uid: 053b757d97042e1c94276200c7b64b91
-    search: [briefcase]
-  -
-    css: resize-full
-    code: 0xf0b2
-    uid: b013f6403e5ab0326614e68d1850fd6b
-    search: [resize, full]
-  -
-    css: users
-    code: 0x1f465
-    from: 0xf0c0
-    uid: 31972e4e9d080eaa796290349ae6c1fd
-    search: [users, contacts, friends]
-  -
-    css: link
-    code: 0x1f517
-    from: 0xf0c1
-    uid: 0ddd3e8201ccc7d41f7b7c9d27eca6c1
-    search: [link]
-  -
-    css: cloud
-    code: 0x2601
-    from: 0xf0c2
-    uid: 2c413e78faf1d6631fd7b094d14c2253
-    search: [cloud]
-  -
     css: beaker
     code: 0xf0c3
     uid: 0f444c61b0d2c9966016d7ddb12f5837
     search: [beaker]
-  -
-    css: scissors
-    code: 0x2702
-    from: 0xf0c4
-    uid: 8772331a9fec983cdb5d72902a6f9e0e
-    search: [scissors, cut]
-  -
-    css: docs
-    code: 0xf0c5
-    uid: c8585e1e5b0467f28b70bce765d5840c
-    search: [doc, article]
-  -
-    css: attach
-    code: 0x1f4ce
-    from: 0xf0c6
-    uid: 0d6ab6194c0eddda2b8c9cedf2ab248e
-    search: [attach, clip]
-  -
-    css: floppy
-    code: 0x1f4be
-    from: 0xf0c7
-    uid: f4445feb55521283572ee88bc304f928
-    search: [floppy, save]
-  -
-    css: blank
-    code: 0xf0c8
-    uid: 2c2ca8a96b31781c9c8056d05c0a8980
-    search: [blank]
-  -
-    css: menu
-    code: 0xf0c9
-    uid: 559647a6f430b3aeadbecd67194451dd
-    search: [menu]
-  -
-    css: list-bullet
-    code: 0xf0ca
-    uid: a2a74f5e7b7d9ba054897d8c795a326a
-    search: [list]
-  -
-    css: list-numbered
-    code: 0xf0cb
-    uid: f6766a8b042c2453a4e153af03294383
-    search: [list]
-  -
-    css: strike
-    code: 0xf0cc
-    uid: 61c242c9e2134d5864d7fdd57b3c9289
-    search: [strike]
-  -
-    css: underline
-    code: 0xf0cd
-    uid: d4a4a38a40b728f46dad1de4ac950231
-    search: [underline]
-  -
-    css: table
-    code: 0xf0ce
-    uid: 8fb55fd696d9a0f58f3b27c1d8633750
-    search: [table]
   -
     css: magic
     code: 0xf0d0
@@ -1208,6 +1269,89 @@ glyphs:
     from: 0xf0d1
     uid: 7f3d8ff1d5f6ee019f0c00ed7a86caec
     search: [truck]
+  -
+    css: money
+    code: 0xf0d6
+    uid: f279f25007794fa6837ff78fe94b216e
+    search: [money]
+  -
+    css: sort
+    code: 0xf0dc
+    uid: 56a21935a5d4d79b2e91ec00f760b369
+    search: [sort]
+  -
+    css: sort-down
+    code: 0xf0dd
+    uid: 94103e1b3f1e8cf514178ec5912b4469
+    search: [sort]
+  -
+    css: sort-up
+    code: 0xf0de
+    uid: 65b3ce930627cabfb6ac81ac60ec5ae4
+    search: [sort]
+  -
+    css: hammer
+    code: 0x1f528
+    from: 0xf0e3
+    uid: dec0ce0476433f7e49e096526cf89465
+    search: [hammer, legal]
+  -
+    css: gauge
+    code: 0xf0e4
+    uid: 0bda4bc779d4c32623dec2e43bd67ee8
+    search: [gauge, indicator]
+  -
+    css: sitemap
+    code: 0xf0e8
+    uid: 6fe95ffc3c807e62647d4f814a96e0d7
+    search: [sitemap]
+
+
+  # Logos
+  -
+    css: github-squared
+    code: 0xf300
+    uid: 0ece9a12de796b8411f868d582bee678
+    from: 0xf092
+    search: [github]
+  -
+    css: github
+    code: 0xf09b
+    uid: 0f6a2573a7b6df911ed199bb63717e27
+    search: [github]
+  -
+    css: twitter-squared
+    code: 0xf304
+    uid: 906348dc798a0d42715cc97c875e3ac6
+    from: 0xf081
+    search: [twitter]
+  -
+    css: twitter
+    code: 0xf099
+    uid: 627abcdb627cb1789e009c08e2678ef9
+    search: [twitter]
+  -
+    css: facebook-squared
+    code: 0xf308
+    uid: 4743b088aa95d6f3b6b990e770d3b647
+    from: 0xf082
+    search: [facebook]
+  -
+    css: facebook
+    code: 0xf09a
+    uid: 8e04c98c8f5ca0a035776e3001ad2638
+    search: [facebook]
+  -
+    css: linkedin-squared
+    code: 0xf30c
+    uid: 1145676a91138011729fa2909997af66
+    from: 0xf08c
+    search: [linkedin]
+  -
+    css: linkedin
+    code: 0xf0e1
+    uid: e9107949dd6c9e8ab2b29ae07156e38c
+    search: [linkedin]
   -
     css: pinterest-circled
     code: 0xf0d2
@@ -1228,116 +1372,15 @@ glyphs:
     code: 0xf0d5
     uid: b8d0c7d76e87b94882329a88e8e43d3d
     search: [google, plus]
+
+
   -
-    css: money
-    code: 0xf0d6
-    uid: f279f25007794fa6837ff78fe94b216e
-    search: [money]
+    css: blank
+    code: 0xf0c8
+    uid: 2c2ca8a96b31781c9c8056d05c0a8980
+    search: [blank]
   -
-    css: down-dir
-    code: 0x25be
-    from: 0xf0d7
-    uid: 2d6150442079cbda7df64522dc24f482
-    search: [down, arrow]
-  -
-    css: up-dir
-    code: 0x25b4
-    from: 0xf0d8
-    uid: 80cd1022bd9ea151d554bec1fa05f2de
-    search: [up, arrow]
-  -
-    css: left-dir
-    code: 0x25c2
-    from: 0xf0d9
-    uid: 9dc654095085167524602c9acc0c5570
-    search: [left, arrow]
-  -
-    css: right-dir
-    code: 0x25b8
-    from: 0xf0da
-    uid: fb1c799ffe5bf8fb7f8bcb647c8fe9e6
-    search: [right, arrow]
-  -
-    css: columns
-    code: 0xf0db
-    uid: 53dd31a6cc6438192b2d7b09b1c1dd45
-    search: [columns]
-  -
-    css: sort
-    code: 0xf0dc
-    uid: 56a21935a5d4d79b2e91ec00f760b369
-    search: [sort]
-  -
-    css: sort-down
-    code: 0xf0dd
-    uid: 94103e1b3f1e8cf514178ec5912b4469
-    search: [sort]
-  -
-    css: sort-up
-    code: 0xf0de
-    uid: 65b3ce930627cabfb6ac81ac60ec5ae4
-    search: [sort]
-  -
-    css: mail-alt
-    code: 0xf0e0
-    uid: ccc2329632396dc096bb638d4b46fb98
-    search: [mail, email]
-  -
-    css: linkedin
-    code: 0xf0e1
-    uid: e9107949dd6c9e8ab2b29ae07156e38c
-    search: [linkedin]
-  -
-    css: ccw
-    code: 0x27f2
-    from: 0xf0e2
-    uid: f9c3205df26e7778abac86183aefdc99
-    search: [reload, undo, arrow]
-  -
-    css: hammer
-    code: 0x1f528
-    from: 0xf0e3
-    uid: dec0ce0476433f7e49e096526cf89465
-    search: [hammer, legal]
-  -
-    css: gauge
-    code: 0xf0e4
-    uid: 0bda4bc779d4c32623dec2e43bd67ee8
-    search: [gauge, indicator]
-  -
-    css: comment
-    code: 0xf0e5
-    uid: 9c1376672bb4f1ed616fdd78a23667e9
-    search: [comment, reply, write]
-  -
-    css: chat
-    code: 0xf0e6
-    uid: 31951fbb9820ed0690f675b3d495c8da
-    search: [chat, talk]
-  -
-    css: flash
-    code: 0x26a1
-    from: 0xf0e7
-    uid: 3212f42c65d41ed91cb435d0490e29ed
-    search: [flash, bolt]
-  -
-    css: sitemap
-    code: 0xf0e8
-    uid: 6fe95ffc3c807e62647d4f814a96e0d7
-    search: [sitemap]
-  -
-    css: umbrella
-    code: 0x2602
-    from: 0xf0e9
-    uid: 24ca41ab002c09de6e89b28f9d599508
-    search: [umbrella]
-  -
-    css: paste
-    code: 0xf0ea
-    uid: b429436ec5a518c78479d44ef18dbd60
-    search: [paste]
-  -
-    css: user-md
-    code: 0xf200
-    uid: 82116c1c568d0b0383ee849662e57bae
-    search: [user, medic]
+    css: lemon
+    code: 0x1f34b
+    uid: 5e0191587645a9f5d514ed4b0a0e008a
+    from: 0xf094
