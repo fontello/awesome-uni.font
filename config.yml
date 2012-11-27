@@ -464,26 +464,25 @@ glyphs:
     from: 0xf079
     search: [retweet, twitter]
 
-  - css: comment
+  -
+    css: comment
     code: 0xe718
     uid: 85528017f1e6053b2253785c31047f44
     from: 0xf075
     search: [comment, reply, write]
-
-  - css: chat
+  -
+    css: chat
     code: 0xe720
     uid: dcedf50ab1ede3283d7a6c70e2fe32f3
     from: 0xf086
     search: [chat, talk]
-
-
   -
-    css: comment
+    css: comment-empty
     code: 0xf0e5
     uid: 9c1376672bb4f1ed616fdd78a23667e9
     search: [comment, reply, write]
   -
-    css: chat
+    css: chat-empty
     code: 0xf0e6
     uid: 31951fbb9820ed0690f675b3d495c8da
     search: [chat, talk]
