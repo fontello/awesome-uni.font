@@ -1383,3 +1383,206 @@ glyphs:
     code: 0x1f34b
     uid: 5e0191587645a9f5d514ed4b0a0e008a
     from: 0xf094
+
+
+  -
+    css: lightbulb
+    code: 0xf0eb
+    uid: 5278ef7773e948d56c4d442c8c8c98cf
+    search: [idea, lamp, light]
+  -
+    css: exchange
+    code: 0xf0ec
+    uid: 6020aff067fc3c119cdd75daa5249220
+    search: [exchange, swap, arrows]
+  -
+    css: download-cloud
+    code: 0xf0ed
+    uid: f5999a012fc3752386635ec02a858447
+    search: [download, cloud]
+  -
+    css: upload-cloud
+    code: 0xf0ee
+    uid: de2fc7a5c986ab8c622f63455d7cf814
+    search: [upload, cloud]
+  -
+    css: user-md
+    code: 0xf0f0
+    uid: 9e8430ce95f56720ae8e7afba291df88
+    search: [medic]
+  -
+    css: stethoscope
+    code: 0xf0f1
+    uid: 5590d2f643b64d2d0757ae660f9c24cb
+    search: [stethoscope]
+  -
+    css: suitcase
+    code: 0xf0f2
+    uid: 5ccf1ed249fd9d723ec1ce8629a9f507
+    search: [suitcase]
+  -
+    css: bell-alt
+    code: 0xf0f3
+    uid: 671f29fa10dda08074a4c6a341bb4f39
+    search: [alert, bell, jingle]
+  -
+    css: coffee
+    code: 0xf0f4
+    uid: 3a26448b711645ba1abfc86c1a6e2f30
+    search: [coffee, cup]
+  -
+    css: food
+    code: 0xf0f5
+    uid: 30b79160618d99ce798e4bd11cafe3fe
+    search: [food, eat]
+  -
+    css: doc-alt
+    code: 0xf0f6
+    uid: 5408be43f7c42bccee419c6be53fdef5
+    search: [doc, article]
+  -
+    css: building
+    code: 0xf0f7
+    uid: 3d1e04316a48ace4e2b81be58343a41c
+    search: [building]
+  -
+    css: hospital
+    code: 0xf0f8
+    uid: c4adaacece4c6341a9ae1816f5ea500c
+    search: [hospital      ]
+  -
+    css: ambulance
+    code: 0xf0f9
+    uid: 6dbf07228006788a96eb6244b3591970
+    search: [ambulance]
+  -
+    css: medkit
+    code: 0xf0fa
+    uid: 46120eb259799eab0dac0691137e5706
+    search: [medkit]
+  -
+    css: fighter-jet
+    code: 0xf0fb
+    uid: cb36cbe4e2dac9545e32c3d80a7c6e03
+    search: [flight, plane, airplane, fly, jet]
+  -
+    css: beer
+    code: 0xf0fc
+    uid: 890bcc8897cce868f6ee65cadadde036
+    search: [beer]
+  -
+    css: h-sigh
+    code: 0xf0fd
+    uid: 6f41d9b99564a01f1fde503b7f03bf1a
+    search: [hospital]
+  -
+    css: plus-squared
+    code: 0xf0fe
+    uid: 1a5cfa186647e8c929c2b17b9fc4dac1
+    search: [plus]
+  -
+    css: angle-double-left
+    code: 0xf100
+    uid: 745f12abe1472d14f8f658de7e5aba66
+    search: [angle, left]
+  -
+    css: angle-double-right
+    code: 0xf101
+    uid: fdfbd1fcbd4cb229716a810801a5f207
+    search: [angle, right]
+  -
+    css: angle-double-up
+    code: 0xf102
+    uid: 63b3012c8cbe3654ba5bea598235aa3a
+    search: [angle, up]
+  -
+    css: angle-double-down
+    code: 0xf103
+    uid: dfec4ffa849d8594c2e4b86f6320b8a6
+    search: [angle, down]
+  -
+    css: angle-left
+    code: 0xf104
+    uid: f3f90c8c89795da30f7444634476ea4f
+    search: []
+  -
+    css: angle-right
+    code: 0xf105
+    uid: 7bf14281af5633a597f85b061ef1cfb9
+    search: [angle, right]
+  -
+    css: angle-up
+    code: 0xf106
+    uid: 5de9370846a26947e03f63142a3f1c07
+    search: [angle, up]
+  -
+    css: angle-down
+    code: 0xf107
+    uid: e4dde1992f787163e2e2b534b8c8067d
+    search: [angle, down]
+  -
+    css: desktop
+    code: 0xf108
+    uid: 757afacc32d82967975cbb3b45cfb41b
+    search: [desktop]
+  -
+    css: laptop
+    code: 0xf109
+    uid: 500fc1f109021e4b1de4deda2f7ed399
+    search: [laptop]
+  -
+    css: tablet
+    code: 0xf10a
+    uid: f001fc3d4daa7da078e8c971e4f36977
+    search: [tablet]
+  -
+    css: mobile
+    code: 0xf10b
+    uid: 0357f7abbc0babf43509669f332e41e6
+    search: [mobile]
+  -
+    css: circle-empty
+    code: 0xf10c
+    uid: 422e07e5afb80258a9c4ed1706498f8a
+    search: [circle]
+  -
+    css: quote-left
+    code: 0xf10d
+    uid: ab95e1351ebaec5850101097cbf7097f
+    search: [quote]
+  -
+    css: quote-right
+    code: 0xf10e
+    uid: d745d7c05b94e609decabade2cae12cb
+    search: [quote]
+  -
+    css: spinner
+    code: 0xf110
+    uid: cda0cdcfd38f5f1d9255e722dad42012
+    search: [spinner]
+  -
+    css: circle
+    code: 0xf111
+    uid: 130380e481a7defc690dfb24123a1f0c
+    search: [circle]
+  -
+    css: reply
+    code: 0xf112
+    uid: c6be5a58ee4e63a5ec399c2b0d15cf2c
+    search: [reply]
+  -
+    css: github
+    code: 0xf113
+    uid: 5e0a374728ffa8d0ae1f331a8f648231
+    search: [github]
+  -
+    css: folder-empty
+    code: 0xf114
+    uid: b091a8bd0fdade174951f17d936f51e4
+    search: [folder]
+  -
+    css: folder-open-empty
+    code: 0xf115
+    uid: 6533bdc16ab201eb3f3b27ce989cab33
+    search: [folder]
+

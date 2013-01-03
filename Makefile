@@ -23,7 +23,8 @@ dist: font html
 dump:
 	rm -r ./src/svg/
 	mkdir ./src/svg/
-	font-dump.js --hcrop --vcenter -c config.yml -f -i ./src/original/fontawesome-webfont.svg -o ./src/svg/ -d diff.yml
+	#font-dump.js --hcrop --vcenter -c config.yml -f -i ./src/original/FontAwesome.svg -o ./src/svg/ -d diff.yml
+	font-dump.js -c config.yml -f -i ./src/original/FontAwesome.svg -o ./src/svg/ -d diff.yml
 
 
 font:
