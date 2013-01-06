@@ -186,11 +186,6 @@ glyphs:
     from: 0xf0c0
     uid: 31972e4e9d080eaa796290349ae6c1fd
     search: [users, contacts, friends]
-  -
-    css: user-md
-    code: 0xf200
-    uid: 82116c1c568d0b0383ee849662e57bae
-    search: [user, medic]
 
 
   - css: video
