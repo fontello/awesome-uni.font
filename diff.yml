@@ -1,46 +1,6 @@
 glyphs:
   -
-    css: circle-empty
-    code: 0xf10c
-    uid: 422e07e5afb80258a9c4ed1706498f8a
-    search: [circle]
-  -
-    css: quote-left
-    code: 0xf10d
-    uid: ab95e1351ebaec5850101097cbf7097f
-    search: [quote]
-  -
-    css: quote-right
-    code: 0xf10e
-    uid: d745d7c05b94e609decabade2cae12cb
-    search: [quote]
-  -
-    css: spinner
-    code: 0xf110
-    uid: cda0cdcfd38f5f1d9255e722dad42012
-    search: [spinner]
-  -
-    css: circle
-    code: 0xf111
-    uid: 130380e481a7defc690dfb24123a1f0c
-    search: [circle]
-  -
-    css: reply
-    code: 0xf112
-    uid: c6be5a58ee4e63a5ec399c2b0d15cf2c
-    search: [reply]
-  -
-    css: github
-    code: 0xf113
-    uid: 5e0a374728ffa8d0ae1f331a8f648231
-    search: [github]
-  -
-    css: folder-empty
-    code: 0xf114
-    uid: b091a8bd0fdade174951f17d936f51e4
-    search: [folder]
-  -
-    css: folder-open-empty
-    code: 0xf115
-    uid: 6533bdc16ab201eb3f3b27ce989cab33
-    search: [folder]
+    css: f113
+    code: '0xf113'
+    uid: 56ed6169452ac4ddbbe1ff0651af8c27
+    search: []

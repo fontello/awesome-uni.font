@@ -1,9 +1,13 @@
 Fixed FA src
 
-1. Open TTF in FontForge
-2. "Select All"
+(!) Use TTF, open in FontForge
+
+1. Simplify
+2. Round
 3. Intercections - Delete
-4. Simplify
-5. Round
-6. Direction fix
-7. Create SVG font
+4. Extremmums
+7. Simplify - Canonical contours
+6. Simplify - Canonical start point
+5. Directions
+
+(*) most problems are caused by globe symbol
