@@ -328,7 +328,7 @@ glyphs:
     css: link-ext
     code: 0xf08e
     uid: e15f0d620a7897e2035c18c80142f6d9
-    search: [link, url]
+    search: [link, url, external]
 
   -
     css: attach
@@ -744,12 +744,12 @@ glyphs:
     code: 0xe750
     uid: 0b2b66e526028a6972d51a6f10281b4b
     from: 0xf00e
-    search: [zoom. scale, in]
+    search: [zoom, scale, in]
   - css: zoom-out
     code: 0xe751
     uid: d25d10efa900f529ad1d275657cfd30e
     from: 0xf010
-    search: [zoom. scale, out]
+    search: [zoom, scale, out]
 
 
     # Arrows
@@ -1044,12 +1044,12 @@ glyphs:
     css: desktop
     code: 0xf108
     uid: 757afacc32d82967975cbb3b45cfb41b
-    search: [desktop]
+    search: [desktop, screen, monitor]
   -
     css: laptop
     code: 0xf109
     uid: 500fc1f109021e4b1de4deda2f7ed399
-    search: [laptop]
+    search: [laptop, notebook]
   -
     css: tablet
     code: 0xf10a
@@ -1136,13 +1136,13 @@ glyphs:
     code: 0xe77c
     uid: c009d417f87d6a27bb5a1cefd30b6cbd
     from: 0xf034
-    search: [editor, height]
+    search: [editor, text, height]
 
   - css: text-width
     code: 0xe77d
     uid: 13a971bcccd2dda26d4d4eccd8593f8a
     from: 0xf035
-    search: [editor, width]
+    search: [editor, text, width]
 
   - css: align-left
     code: 0xe77e
@@ -1436,7 +1436,7 @@ glyphs:
     css: gauge
     code: 0xf0e4
     uid: 0bda4bc779d4c32623dec2e43bd67ee8
-    search: [gauge, indicator]
+    search: [gauge, indicator, dashboard]
   -
     css: sitemap
     code: 0xf0e8
