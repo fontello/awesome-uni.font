@@ -620,19 +620,19 @@ glyphs:
     code: 0x2699
     uid: e99461abfef3923546da8d745372c995
     from: 0xf013
-    search: [settings, cog, gear]
+    search: [settings, cog, gear, params]
   - 
     css: cog-alt
     code: 0x26ef
     uid: 98687378abd1faf8f6af97c254eb6cd6
     from: 0xf085
-    search: [settings, cog, gear]
+    search: [settings, cog, gear, params]
   -
     css: wrench
     code: 0x1f527
     from: 0xf0ad
     uid: 5bb103cd29de77e0e06a52638527b575
-    search: [wrench, tools, settings]
+    search: [wrench, tools, settings, params]
 
 
   - css: basket
@@ -1059,7 +1059,7 @@ glyphs:
     css: mobile
     code: 0xf10b
     uid: 0357f7abbc0babf43509669f332e41e6
-    search: [mobile]
+    search: [mobile, phone]
 
 
   -
@@ -1067,14 +1067,14 @@ glyphs:
     code: 0xe777
     uid: c7a75a25880928fe76981a53eca4f926
     from: 0xf01c
-    search: [inbox]
+    search: [inbox, stack]
 
   -
     css: globe
     code: 0x1f30e
     from: 0xf0ac
     uid: 197375a3cea8cb90b02d06e4ddf1433d
-    search: [globe]
+    search: [globe, world]
   -
     css: cloud
     code: 0x2601
@@ -1410,7 +1410,7 @@ glyphs:
     css: money
     code: 0xf0d6
     uid: f279f25007794fa6837ff78fe94b216e
-    search: [money]
+    search: [money, banknote]
   -
     css: sort
     code: 0xf0dc
