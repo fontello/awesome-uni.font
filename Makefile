@@ -43,6 +43,7 @@ font:
 		echo "  make support" >&2 ; \
 		exit 128 ; \
 		fi
+	svgo --folder ./src/svg --config svgo.yml
 	fontbuild.py -c ./config.yml -t ./src/font_template.sfd -i ./src/svg -o ./font/$(FONT_NAME).ttf
 	#font_remap.py -c ./config.yml -i ./src/original/fontawesome-webfont.svg -o ./font/$(FONT_NAME).ttf
 	#font_transform.py -c ./config.yml -i ./font/$(FONT_NAME).ttf -o ./font/$(FONT_NAME)-transformed.ttf
@@ -89,7 +90,7 @@ gh-pages:
 		git commit -q -m 'refreshed gh-pages'
 	cd ${TMP_PATH} && \
 		git remote add remote ${REMOTE_REPO} && \
-		git push --force remote +master:gh-pages 
+		git push --force remote +master:gh-pages
 	rm -rf ${TMP_PATH}
 
 
