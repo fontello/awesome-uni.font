@@ -58,7 +58,7 @@ font:
 	mv ./font/$(FONT_NAME)-hinted.ttf ./font/$(FONT_NAME).ttf
 	#fontconvert.py -i ./font/$(FONT_NAME).ttf -o ./font
 	${BIN}/ttf2eot "./font/$(FONT_NAME).ttf" "./font/$(FONT_NAME).eot"
-	${BIN}/ttf2woff "./font/$(FONT_NAME).ttf" "./font/$(FONT_NAME).eot"
+	${BIN}/ttf2woff "./font/$(FONT_NAME).ttf" "./font/$(FONT_NAME).woff"
 
 	# still use fontforge to convert -> SVG
 	fontforge -c 'font = fontforge.open("./font/$(FONT_NAME).ttf"); font.generate("./font/$(FONT_NAME).svg")'	
