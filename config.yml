@@ -83,7 +83,7 @@ meta:
   license: CC BY 3.0
   license_url: http://creativecommons.org/licenses/by/3.0/
 
-  css_prefix: "icon-"
+  css_prefix_text: "icon-"
   columns: 4
 
 #transform:

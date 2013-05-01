@@ -86,8 +86,9 @@ support:
 
 
 html:
-	tpl-render.js --locals config.yml --input ./src/demo/demo.jade --output ./font/demo.html
+	#tpl-render.js --locals config.yml --input ./src/demo/demo.jade --output ./font/demo.html
 
+	${BIN}/jade -O '$(shell node_modules/.bin/js-yaml -j config.yml)' ./src/demo/demo.jade -o ./font
 
 gh-pages:
 	@if test -z ${REMOTE_REPO} ; then \
