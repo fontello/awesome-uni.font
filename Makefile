@@ -13,9 +13,11 @@ REMOTE_REPO ?= $(shell git config --get remote.${REMOTE_NAME}.url)
 
 
 # Add local versions of ttf2eot nd ttfautohint to the PATH
-PATH := $(PATH):./support/font-builder/support/ttf2eot
-PATH := $(PATH):./support/font-builder/support/ttfautohint/frontend
+#PATH := $(PATH):./support/font-builder/support/ttf2eot
+#PATH := $(PATH):./support/font-builder/support/ttfautohint/frontend
 PATH := $(PATH):./support/font-builder/bin
+PWD  := $(shell pwd)
+BIN  := ./node_modules/.bin
 
 
 dist: font html
@@ -24,10 +26,18 @@ dump:
 	rm -r ./src/svg/
 	mkdir ./src/svg/
 	#font-dump.js --hcrop --vcenter -c config.yml -f -i ./src/original/FontAwesome.svg -o ./src/svg/ -d diff.yml
-	font-dump.js -c config.yml -f -i ./src/original/FontAwesome.svg -o ./src/svg/ -d diff.yml
+	#font-dump.js -c config.yml -f -i ./src/original/FontAwesome.svg -o ./src/svg/ -d diff.yml
+	${BIN}/svg-font-dump -c `pwd`/config.yml -f -i ./src/original/FontAwesome.svg -o ./src/svg/ -d diff.yml
+	${BIN}/svgo --config `pwd`/svgo.yml -f ./src/svg
 
 
 font:
+	@if test ! -d node_modules ; then \
+		echo "dependencies not fount:" >&2 ; \
+		echo "  make support" >&2 ; \
+		exit 128 ; \
+		fi
+
 	@if test ! -d support/font-builder/bin ; then \
 		echo "font-builder binaries not found. run:" >&2 ; \
 		echo "  make support" >&2 ; \
@@ -44,13 +54,16 @@ font:
 		exit 128 ; \
 		fi
 	fontbuild.py -c ./config.yml -t ./src/font_template.sfd -i ./src/svg -o ./font/$(FONT_NAME).ttf
-	#font_remap.py -c ./config.yml -i ./src/original/fontawesome-webfont.svg -o ./font/$(FONT_NAME).ttf
-	#font_transform.py -c ./config.yml -i ./font/$(FONT_NAME).ttf -o ./font/$(FONT_NAME)-transformed.ttf
-	#mv ./font/$(FONT_NAME)-transformed.ttf ./font/$(FONT_NAME).ttf
 	ttfautohint --latin-fallback --hinting-limit=200 --hinting-range-max=50 --symbol ./font/$(FONT_NAME).ttf ./font/$(FONT_NAME)-hinted.ttf
 	mv ./font/$(FONT_NAME)-hinted.ttf ./font/$(FONT_NAME).ttf
-	fontconvert.py -i ./font/$(FONT_NAME).ttf -o ./font
-	ttf2eot < ./font/$(FONT_NAME).ttf >./font/$(FONT_NAME).eot
+	#fontconvert.py -i ./font/$(FONT_NAME).ttf -o ./font
+	${BIN}/ttf2eot "./font/$(FONT_NAME).ttf" "./font/$(FONT_NAME).eot"
+	${BIN}/ttf2woff "./font/$(FONT_NAME).ttf" "./font/$(FONT_NAME).eot"
+
+	# still use fontforge to convert -> SVG
+	fontforge -c 'font = fontforge.open("./font/$(FONT_NAME).ttf"); font.generate("./font/$(FONT_NAME).svg")'	
+	# fix fontforge's bug in SVG format
+	sed -i 's/<svg>/<svg xmlns="http:\/\/www\.w3\.org\/2000\/svg">/g' ./font/$(FONT_NAME).svg
 
 
 npm-deps:
