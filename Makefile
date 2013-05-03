@@ -28,7 +28,7 @@ dump:
 	#font-dump.js --hcrop --vcenter -c config.yml -f -i ./src/original/FontAwesome.svg -o ./src/svg/ -d diff.yml
 	#font-dump.js -c config.yml -f -i ./src/original/FontAwesome.svg -o ./src/svg/ -d diff.yml
 	${BIN}/svg-font-dump -c `pwd`/config.yml -f -i ./src/original/FontAwesome.svg -o ./src/svg/ -d diff.yml
-	${BIN}/svgo --config `pwd`/svgo.yml -f ./src/svg
+	${BIN}/svgo --config `pwd`/svgo-dump.yml -f ./src/svg
 
 
 font:
@@ -53,7 +53,10 @@ font:
 		echo "  make support" >&2 ; \
 		exit 128 ; \
 		fi
-	fontbuild.py -c ./config.yml -t ./src/font_template.sfd -i ./src/svg -o ./font/$(FONT_NAME).ttf
+
+	${BIN}/svg-font-create -c config.yml -i ./src/svg -o "./font/$(FONT_NAME).svg"
+	fontforge -c 'font = fontforge.open("./font/$(FONT_NAME).svg"); font.generate("./font/$(FONT_NAME).ttf")'
+	#fontbuild.py -c ./config.yml -t ./src/font_template.sfd -i ./src/svg -o ./font/$(FONT_NAME).ttf
 	ttfautohint --latin-fallback --hinting-limit=200 --hinting-range-max=50 --symbol ./font/$(FONT_NAME).ttf ./font/$(FONT_NAME)-hinted.ttf
 	mv ./font/$(FONT_NAME)-hinted.ttf ./font/$(FONT_NAME).ttf
 	#fontconvert.py -i ./font/$(FONT_NAME).ttf -o ./font
@@ -61,9 +64,9 @@ font:
 	${BIN}/ttf2woff "./font/$(FONT_NAME).ttf" "./font/$(FONT_NAME).woff"
 
 	# still use fontforge to convert -> SVG
-	fontforge -c 'font = fontforge.open("./font/$(FONT_NAME).ttf"); font.generate("./font/$(FONT_NAME).svg")'	
+	#fontforge -c 'font = fontforge.open("./font/$(FONT_NAME).ttf"); font.generate("./font/$(FONT_NAME).svg")'	
 	# fix fontforge's bug in SVG format
-	sed -i 's/<svg>/<svg xmlns="http:\/\/www\.w3\.org\/2000\/svg">/g' ./font/$(FONT_NAME).svg
+	#sed -i 's/<svg>/<svg xmlns="http:\/\/www\.w3\.org\/2000\/svg">/g' ./font/$(FONT_NAME).svg
 
 
 npm-deps:
@@ -88,7 +91,7 @@ support:
 html:
 	#tpl-render.js --locals config.yml --input ./src/demo/demo.jade --output ./font/demo.html
 
-	${BIN}/jade -O '$(shell node_modules/.bin/js-yaml -j config.yml)' ./src/demo/demo.jade -o ./font
+	@${BIN}/jade -O '$(shell node_modules/.bin/js-yaml -j config.yml)' ./src/demo/demo.jade -o ./font
 
 gh-pages:
 	@if test -z ${REMOTE_REPO} ; then \
