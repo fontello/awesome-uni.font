@@ -22,6 +22,7 @@ plugins:
   - cleanupAttrs
   - convertStyleToAttrs
   - removeRasterImages
+  - cleanupNumericValues
   - convertColors
   - removeUnknownsAndDefaults
   - removeNonInheritableGroupAttrs
@@ -40,7 +41,6 @@ plugins:
   - mergePaths
   - cleanupIDs
   - removeUnusedNS
-  - transformsWithOnePath:
-      hcrop: true
-  #- cleanupNumericValues:
+  #- transformsWithOnePath:
+  #    hcrop: true
 
