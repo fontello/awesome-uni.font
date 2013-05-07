@@ -34,8 +34,10 @@ plugins:
   - moveElemsAttrsToGroup
   - collapseGroups
   - moveGroupAttrsToElems
-  - convertPathData
   - convertTransform
+  - convertPathData:
+      negativeExtraSpace: false
+      straightCurves: false
   - removeEmptyAttrs
   - removeEmptyContainers
   - mergePaths
@@ -43,4 +45,5 @@ plugins:
   - removeUnusedNS
   #- transformsWithOnePath:
   #    hcrop: true
+  #    negativeExtraSpace: false
 
