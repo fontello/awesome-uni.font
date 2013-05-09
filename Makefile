@@ -26,13 +26,14 @@ dump:
 
 font:
 	@if test ! -d node_modules ; then \
-		echo "dependencies not fount:" >&2 ; \
+		echo "dependencies not found:" >&2 ; \
 		echo "  make dependencies" >&2 ; \
 		exit 128 ; \
 		fi
 
 	${BIN}/svg-font-create -c config.yml -i ./src/svg -o "./font/$(FONT_NAME).svg"
 	fontforge -c 'font = fontforge.open("./font/$(FONT_NAME).svg"); font.generate("./font/$(FONT_NAME).ttf")'
+
 	@if test `which ttfautohint` ; then \
 		ttfautohint --latin-fallback --hinting-limit=200 --hinting-range-max=50 --symbol ./font/$(FONT_NAME).ttf ./font/$(FONT_NAME)-hinted.ttf && \
 		mv ./font/$(FONT_NAME)-hinted.ttf ./font/$(FONT_NAME).ttf ; \
@@ -87,7 +88,8 @@ dependencies:
 		sudo dpkg -i /tmp/ttfautohint.deb && \
 			echo "SUCCESS" || echo "FAILED" ; \
 		fi
+	@if test ! -d node_modules ; then \
+		npm install ; \
+		fi
 
-
-#.SILENT:
-.PHONY: font
+.PHONY: font html dist dump gh-pages dependencies
