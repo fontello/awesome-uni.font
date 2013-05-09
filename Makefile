@@ -27,20 +27,19 @@ dump:
 font:
 	@if test ! -d node_modules ; then \
 		echo "dependencies not fount:" >&2 ; \
-		echo "  make support" >&2 ; \
-		exit 128 ; \
-		fi
-
-	@if test ! `which ttfautohint` ; then \
-		echo "ttfautohint not found. run:" >&2 ; \
-		echo "  make support" >&2 ; \
+		echo "  make dependencies" >&2 ; \
 		exit 128 ; \
 		fi
 
 	${BIN}/svg-font-create -c config.yml -i ./src/svg -o "./font/$(FONT_NAME).svg"
 	fontforge -c 'font = fontforge.open("./font/$(FONT_NAME).svg"); font.generate("./font/$(FONT_NAME).ttf")'
-	ttfautohint --latin-fallback --hinting-limit=200 --hinting-range-max=50 --symbol ./font/$(FONT_NAME).ttf ./font/$(FONT_NAME)-hinted.ttf
-	mv ./font/$(FONT_NAME)-hinted.ttf ./font/$(FONT_NAME).ttf
+	@if test `which ttfautohint` ; then \
+		ttfautohint --latin-fallback --hinting-limit=200 --hinting-range-max=50 --symbol ./font/$(FONT_NAME).ttf ./font/$(FONT_NAME)-hinted.ttf && \
+		mv ./font/$(FONT_NAME)-hinted.ttf ./font/$(FONT_NAME).ttf ; \
+		else \
+		echo "WARNING: ttfautohint not found. Font will not be hinted." >&2 ; \
+		fi
+
 	${BIN}/ttf2eot "./font/$(FONT_NAME).ttf" "./font/$(FONT_NAME).eot"
 	${BIN}/ttf2woff "./font/$(FONT_NAME).ttf" "./font/$(FONT_NAME).woff"
 
@@ -64,6 +63,30 @@ gh-pages:
 		git remote add remote ${REMOTE_REPO} && \
 		git push --force remote +master:gh-pages 
 	rm -rf ${TMP_PATH}
+
+
+dependencies:
+	@if test ! `which npm` ; then \
+		echo "Node.JS and NPM are required for html demo generation." >&2 ; \
+		echo "This is non-fatal error and you'll still be able to build font," >&2 ; \
+		echo "however, to build demo with >> make html << you need:" >&2 ; \
+		echo "  - Install Node.JS and NPM" >&2 ; \
+		echo "  - Run this task once again" >&2 ; \
+		exit 128 ; \
+		fi
+	@if test ! `which ttfautohint` ; then \
+		echo "Trying to install ttf-autohint from repository..." ; \
+		apt-cache policy -q=2 | grep -q 'Candidate' && \
+			sudo apt-get install ttfautohint && \
+			echo "SUCCESS" || echo "FAILED" ; \
+		fi
+	@if test ! `which ttfautohint` ; then \
+		echo "Trying to install ttf-autohint from Debian's repository..." ; \
+		curl --silent --show-error --output /tmp/ttfautohint.deb \
+			http://ftp.de.debian.org/debian/pool/main/t/ttfautohint/ttfautohint_0.95-1_amd64.deb && \
+		sudo dpkg -i /tmp/ttfautohint.deb && \
+			echo "SUCCESS" || echo "FAILED" ; \
+		fi
 
 
 #.SILENT:
