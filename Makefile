@@ -20,7 +20,7 @@ dist: font html
 dump:
 	rm -rf ./src/svg/
 	mkdir ./src/svg/
-	${BIN}/svg-font-dump -c `pwd`/config.yml -f -i ./src/original/FontAwesome.svg -o ./src/svg/ -d diff.yml
+	${BIN}/svg-font-dump -c `pwd`/config.yml -f -i ./src/original/fontawesome-webfont.svg -o ./src/svg/ -d diff.yml
 	${BIN}/svgo --config `pwd`/dump.svgo.yml -f ./src/svg
 
 
