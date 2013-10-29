@@ -948,6 +948,14 @@ glyphs:
     uid: 128d63150a41800e0beff55235269542
     from: 0xf01b
     search: [arrow, up, upload]
+  - css: left-circled2
+    code: 0xf190
+    uid: a65ca48f3fe7d6e5c60edbd943f4fdb6
+    search: [arrow, left]
+  - css: right-circled2
+    code: 0xf18e
+    uid: d0673ef38e1c458a6de52aad2a2f800d
+    search: [arrow, right]
 
 
   -
@@ -1201,20 +1209,25 @@ glyphs:
     search: [exchange, swap, switch, arrows]
 
   -
-    css: collapse
+    css: expand
     code: 0xf150
     uid: 84bb9695b8662fa4783242f84c9e4682
-    search: [collapse]
+    search: [expand]
   -
-    css: collapse-top
+    css: collapse
     code: 0xf151
     uid: 7960517a504e42aea0641f15bc55fbed
     search: [collapse]
   -
-    css: expand
+    css: expand-right
     code: 0xf152
     uid: ed5a38704f0329e610ee1c92bec3ad3d
     search: [expand]
+  -
+    css: collapse-left
+    code: 0xf191
+    uid: ea2ec99fbce03864e593bbf4f302a79d
+    search: [collapse]
 
     # Player
   - css: play
@@ -1617,7 +1630,12 @@ glyphs:
     css: circle-empty
     code: 0xf10c
     uid: 422e07e5afb80258a9c4ed1706498f8a
-    search: [circle]
+    search: [circle, radio]
+  -
+    css: dot-circled
+    code: 0xf192
+    uid: 81bb68665e8e595505272a746db07c7a
+    search: [dot, radio]
 
   - css: asterisk
     code: 0x2731
@@ -1766,12 +1784,17 @@ glyphs:
     css: yen
     code: 0xf157
     uid: 5f61f8a682b77d2529296a8061bf9597
-    search: [yen, jpy, money]
+    search: [yen, jpy, renminbi, cny, money]
   -
-    css: renminbi
+    css: rouble
     code: 0xf158
     uid: 243424d56528e83e4fe9ef6e6347a2ef
-    search: [renminbi, cny, money]
+    search: [rouble, rub, rur, ruble, money]
+  -
+    css: try
+    code: 0xf195
+    uid: 7f5801d1e299b445ad0090b0a9e94bcb
+    search: [try, lira]
   -
     css: won
     code: 0xf159
@@ -1965,6 +1988,11 @@ glyphs:
     uid: c92ad3028acce9d51bae0ac82f5de8a2
     search: [bullseye]
 
+  - css: wheelchair
+    code: 0xf193
+    uid: 8a67014b864fb93503348593979ddce3
+    search: [wheelchair, accessibility]
+
 
   # Logos
   -
@@ -2091,6 +2119,11 @@ glyphs:
     uid: fcdc6d7a89771d2dbd38eb719aafb2ff
     search: [maxcdn]
   -
+    css: pagelines
+    code: 0xf18c
+    uid: bbf50a560f95a4cce5209d47e71cbc30
+    search: [pagelines]
+  -
     css: pinterest-circled
     code: 0xf0d2
     uid: da851b7c1f84ee83f93b29ae613558dc
@@ -2110,6 +2143,11 @@ glyphs:
     code: 0xf17e
     uid: 58a16628dcbd6456c61218f3d27591be
     search: []
+  -
+    css: stackexchange
+    code: 0xf18d
+    uid: b6d6b3561d705330c7ad2155e8ee94ba
+    search: [stackexchange]
   -
     css: stackoverflow
     code: 0xf16c
@@ -2141,6 +2179,11 @@ glyphs:
     code: 0xf099
     uid: 627abcdb627cb1789e009c08e2678ef9
     search: [twitter]
+  -
+    css: vimeo-squared
+    code: 0xf194
+    uid: 1f66490bf24c99e2c56b866d8fbd0372
+    search: [vimeo]
   -
     css: vkontakte
     code: 0xf189
