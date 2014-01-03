@@ -1079,13 +1079,13 @@ glyphs:
     search: [arrow, down]
   -
     css: left
-    code: 0xf178
-    uid: fb94e23ae1e7660aa63cc5f351ec7560
+    code: 0xf177
+    uid: f6d72aa5ef8e8f0e553012af9a29a87e
     search: [arrow, left]
   -
     css: right
-    code: 0xf177
-    uid: f6d72aa5ef8e8f0e553012af9a29a87e
+    code: 0xf178
+    uid: fb94e23ae1e7660aa63cc5f351ec7560
     search: [arrow, right]
   -
     css: up
