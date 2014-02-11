@@ -314,6 +314,11 @@ glyphs:
     uid: 1a5cfa186647e8c929c2b17b9fc4dac1
     search: [plus]
   -
+    css: plus-squared-alt
+    code: 0xf196
+    uid: 2d3be3e856fc1e4ac067590d2ded1b07
+    search: [plus]
+  -
     css: plus-squared-small
     code: 0xf116
     uid: bec22f5ef2f066ae057a0246fc6a36dd
