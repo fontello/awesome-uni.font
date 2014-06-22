@@ -39,7 +39,7 @@
 #
 # #
 # # Optional. You can apply global rescale + offset to all font glyphs.
-# # Param values ar 0..1, where 1 = 100%. 
+# # Param values ar 0..1, where 1 = 100%.
 # #
 # transform:
 #   baseline: 0.2                 # baseline for rescale symmetry. Default value
@@ -93,7 +93,7 @@ meta:
 
 
 font:
-  version: "1.0"
+  version: "4.1.0"
 
   # use !!!small!!! letters a-z, or Opera will fail under OS X
   # fontname will be also used as file name.
@@ -139,6 +139,11 @@ glyphs:
     css: mail-alt
     code: 0xf0e0
     uid: ccc2329632396dc096bb638d4b46fb98
+    search: [mail, email]
+  -
+    css: mail-squared
+    code: 0xf199
+    uid: 17c21cd98db80e521e573eba247bd69b
     search: [mail, email]
 
 
@@ -202,6 +207,11 @@ glyphs:
     code: 0xf182
     uid: 9bf7e14698cccdca37a6f1a02cf7d79e
     search: [female]
+  -
+    css: child
+    code: 0xf1ae
+    uid: c2314ed1d2314b89f9285c53bcbf2548
+    search: [child, people]
 
 
   - css: video
@@ -583,6 +593,18 @@ glyphs:
     search: [export, share]
 
   -
+    css: share
+    code: 0xf1e0
+    uid: 4aad6bb50b02c18508aae9cbe14e784e
+    search: [share]
+
+  -
+    css: share-squared
+    code: 0xf1e1
+    uid: 4c1f3c0b331d5f72c6a38d7bb7632675
+    search: [share]
+
+  -
     css: pencil
     code: 0x270e
     uid: d35a1d35efeb784d1dc9ac18b9b6c2b6
@@ -729,6 +751,51 @@ glyphs:
     uid: c08a1cde48d96cba21d8c05fa7d7feb1
     search: [doc, file, article]
 
+  - css: file-pdf
+    code: 0xf1c1
+    uid: 9daa1fdf0838118518a7e22715e83abc
+    search: [file, pdf]
+
+  - css: file-word
+    code: 0xf1c2
+    uid: 310ffd629da85142bc8669f010556f2d
+    search: [file, word]
+
+  - css: file-excel
+    code: 0xf1c3
+    uid: f761c3bbe16ba2d332914ecb28e7a042
+    search: [file, excel]
+
+  - css: file-powerpoint
+    code: 0xf1c4
+    uid: edcd4022de8d8df266ef7c42d2658ca5
+    search: [file, powerpoint]
+
+  - css: file-image
+    code: 0xf1c5
+    uid: 3c961c1a8d874815856fc6637dc5a13c
+    search: [file, image, picture]
+
+  - css: file-archive
+    code: 0xf1c6
+    uid: e80ae555c1413a4ec18b33fb348b4049
+    search: [file, archive]
+
+  - css: file-audio
+    code: 0xf1c7
+    uid: 81db033e704eb7c586a365559d7c0f36
+    search: [file, audio, sound]
+
+  - css: file-video
+    code: 0xf1c8
+    uid: dd69d9aa589ea7bc0a82a3fe67039f4b
+    search: [file, video, movie]
+
+  - css: file-code
+    code: 0xf1c9
+    uid: 26613a2e6bc41593c54bead46f8c8ee3
+    search: [file, code]
+
   - css: folder
     code: 0x1f4c1
     uid: f8aa663c489bcbd6e68ec8147dca841e
@@ -779,6 +846,11 @@ glyphs:
     code: 0xf098
     uid: ec488dfd1f548948c09671ca5a60ec92
     search: [phone]
+  -
+    css: fax
+    code: 0xf1ac
+    uid: 5cbe092278ff71fc27c920298b0f3ca3
+    search: [fax]
 
 
   -
@@ -794,7 +866,7 @@ glyphs:
     uid: e99461abfef3923546da8d745372c995
     from: 0xf013
     search: [settings, cog, gear, params]
-  - 
+  -
     css: cog-alt
     code: 0x26ef
     uid: 98687378abd1faf8f6af97c254eb6cd6
@@ -806,6 +878,11 @@ glyphs:
     from: 0xf0ad
     uid: 5bb103cd29de77e0e06a52638527b575
     search: [wrench, tools, settings, params]
+  -
+    css: sliders
+    code: 0xf1de
+    uid: 21b42d3c3e6be44c3cc3d73042faa216
+    search: [sliders, equalizer, settings]
 
 
   - css: basket
@@ -1214,6 +1291,12 @@ glyphs:
     search: [exchange, swap, switch, arrows]
 
   -
+    css: history
+    code: 0xf1da
+    uid: d4816c0845aa43767213d45574b3b145
+    search: [history]
+
+  -
     css: expand
     code: 0xf150
     uid: 84bb9695b8662fa4783242f84c9e4682
@@ -1403,6 +1486,22 @@ glyphs:
     uid: cb36cbe4e2dac9545e32c3d80a7c6e03
     search: [flight, plane, airplane, fly, jet]
 
+  - css: paper-plane
+    code: 0xf1d8
+    uid: 38575a803c4da31ce20d77e1e1236bcb
+    search: [flight, plane, airplane, fly]
+
+  - css: paper-plane-empty
+    code: 0xf1d9
+    uid: 4b2321afcbe0505a70b80abd5c25e09b
+    search: [flight, plane, airplane, fly]
+
+  - css: space-shuttle
+    code: 0xf197
+    uid: d650df2fd7c4e27d9185d90a1c12a881
+    search: [space, shuttle]
+
+
   - css: leaf
     code: 0x1f342
     uid: 19e7b342a5e6bd0cd86de6d6208486a4
@@ -1428,6 +1527,18 @@ glyphs:
     uid: a8cb1c217f02b073db3670c061cc54d2
     from: 0xf033
     search: [editor, italic]
+
+  -
+    css: header
+    code: 0xf1dc
+    uid: 0c708edd8fae2376b3370aa56d40cf9e
+    search: [header]
+
+  -
+    css: paragraph
+    code: 0xf1dd
+    uid: c5845105a87df2ee1999826d90622f6a
+    search: [paragraph]
 
   - css: text-height
     code: 0xe77c
@@ -1637,6 +1748,16 @@ glyphs:
     uid: 422e07e5afb80258a9c4ed1706498f8a
     search: [circle, radio]
   -
+    css: circle-thin
+    code: 0xf1db
+    uid: 5774d0a0e50f6eefc8be01bd761e5dd3
+    search: [circle]
+  -
+    css: circle-notch
+    code: 0xf1ce
+    uid: 4ffd8122933b9ee0183b925e1554969f
+    search: [circle, notch]
+  -
     css: dot-circled
     code: 0xf192
     uid: 81bb68665e8e595505272a746db07c7a
@@ -1754,11 +1875,21 @@ glyphs:
     uid: ff70f7b3228702e0d590e60ed3b90bea
     search: [magic]
   -
+    css: cab
+    code: 0xf1b9
+    uid: 9937d762aee170b7350b15dd02dd34a3
+    search: [cab, auto, car]
+  -
+    css: taxi
+    code: 0xf1ba
+    uid: 5eacf9f8805e2c0bc306dcd1e709db16
+    search: [taxi, auto, car]
+  -
     css: truck
     code: 0x1f69a
     from: 0xf0d1
     uid: 7f3d8ff1d5f6ee019f0c00ed7a86caec
-    search: [truck]
+    search: [truck, auto, car]
 
   -
     css: money
@@ -1933,6 +2064,16 @@ glyphs:
     code: 0xf0f7
     uid: 3d1e04316a48ace4e2b81be58343a41c
     search: [building]
+  -
+    css: building-filled
+    code: 0xf1ad
+    uid: ede2ea0a583f662b79fbb181b428c20d
+    search: [building]
+  -
+    css: bank
+    code: 0xf19c
+    uid: 8c0ffa714cecbf5144e022d9c3df4a1f
+    search: [bank, university, institution]
 
 
   -
@@ -1998,6 +2139,83 @@ glyphs:
     uid: 8a67014b864fb93503348593979ddce3
     search: [wheelchair, accessibility]
 
+  -
+    css: language
+    code: 0xf1ab
+    uid: 4fc9b8c122d1b5ca3df42a104a655e8b
+    search: [language]
+
+  -
+    css: graduation-cap
+    code: 0xf19d
+    uid: 20fc52f9a88bb7bda023ef209acac095
+    search: ['graduation cap']
+
+  -
+    css: paw
+    code: 0xf1b0
+    uid: 55605ca79a65def1a9c300037ff1d0d5
+    search: [paw]
+
+  -
+    css: spoon
+    code: 0xf1b1
+    uid: 3964e28e6bdf85b3b70df3533db69867
+    search: [spoon]
+
+  -
+    css: cube
+    code: 0xf1b2
+    uid: fbede3c5584282a0e9b131926dff71da
+    search: [cube]
+  -
+    css: cubes
+    code: 0xf1b3
+    uid: af95ef0ddda80a78828c62d386506433
+    search: [cubes]
+
+  -
+    css: recycle
+    code: 0xf1b8
+    uid: 288f930b765216bc04e475740331bdf5
+    search: [recycle]
+
+  -
+    css: tree
+    code: 0xf1bb
+    uid: 88da60b3a17e5744695682833a178e73
+    search: [tree]
+
+  -
+    css: database
+    code: 0xf1c0
+    uid: 347c38a8b96a509270fdcabc951e7571
+    search: [database]
+
+  -
+    css: lifebuoy
+    code: 0xf1cd
+    uid: ebffa4e734c8379ffee4fbfe49264d94
+    search: [lifebuoy, support]
+
+  -
+    css: rebel
+    code: 0xf1d0
+    uid: c53415fbd2695033bd7180d7a9ed4934
+    search: [rebel]
+
+  -
+    css: empire
+    code: 0xf1d1
+    uid: 6632ce1019f9115842335622cb55f4e7
+    search: [empire]
+
+  -
+    css: bomb
+    code: 0xf1e2
+    uid: 49ef53dc31aa9442d77f6ba4f559b528
+    search: [bomb]
+
 
   # Logos
   -
@@ -2016,6 +2234,16 @@ glyphs:
     uid: e9fa538fd5913046497ac148e27cd8ea
     search: [apple]
   -
+    css: behance
+    code: 0xf1b4
+    uid: aa58e30c7196b1378a6ca78c025cc3b5
+    search: [behance]
+  -
+    css: behance-squared
+    code: 0xf1b5
+    uid: b501bc7737850366e98043c585163eec
+    search: [behance]
+  -
     css: bitbucket
     code: 0xf171
     uid: 169f51b7e405de8c03cf85a6e8c740ab
@@ -2026,10 +2254,30 @@ glyphs:
     uid: 4ae56c66a1f93e28b8d4f866db2b018a
     search: [bitbucket]
   -
+    css: codeopen
+    code: 0xf1cb
+    uid: 76675011e906d50af404186b489fc76f
+    search: [codeopen]
+  -
     css: css3
     code: 0xf13c
     uid: 01c946ce2ed5500e0a918f2b3a7d1923
     search: [css3]
+  -
+    css: delicious
+    code: 0xf1a5
+    uid: 6975c4c656d41a0283d9c52516bf38ed
+    search: [delicious]
+  -
+    css: deviantart
+    code: 0xf1bd
+    uid: 54fad985c676a007c79c346ebaec29d6
+    search: [deviantart]
+  -
+    css: digg
+    code: 0xf1a6
+    uid: ef0e69c3275e8c845aca69a79900092d
+    search: [digg]
   -
     css: dribbble
     code: 0xf17d
@@ -2040,6 +2288,11 @@ glyphs:
     code: 0xf16b
     uid: 9e34a047fee949eae9b6e613d790d6cf
     search: [dropbox]
+  -
+    css: drupal
+    code: 0xf1a9
+    uid: d16ba9078d51e79b5ad6af0235adbd54
+    search: [drupal]
   -
     css: facebook
     code: 0xf09a
@@ -2062,6 +2315,17 @@ glyphs:
     uid: a32d12927584e3c8a3dff23eb816d360
     search: [foursquare]
   -
+    css: git-squared
+    code: 0xf1d2
+    uid: c75b7d61b0bce6aeb54292e3952a1568
+    search: [git]
+
+  -
+    css: git
+    code: 0xf1d3
+    uid: e7cb72a17f3b21e3576f35c3f0a7639b
+    search: [git]
+  -
     css: github
     code: 0xf113
     uid: 5e0a374728ffa8d0ae1f331a8f648231
@@ -2083,15 +2347,25 @@ glyphs:
     uid: 5b4b48418155c35459f12171f97c82ff
     search: [gittip]
   -
-    css: gplus-squared
-    code: 0xf0d4
-    uid: f0cf7db1b03cb65adc450aa3bdaf8c4d
-    search: [google, plus]
+    css: google
+    code: 0xf1a0
+    uid: f06fe7ff18d1c591bc1183cb3ab105e9
+    search: [google]
   -
     css: gplus
     code: 0xf0d5
     uid: b8d0c7d76e87b94882329a88e8e43d3d
     search: [google, plus]
+  -
+    css: gplus-squared
+    code: 0xf0d4
+    uid: f0cf7db1b03cb65adc450aa3bdaf8c4d
+    search: [google, plus]
+  -
+    css: hacker-news
+    code: 0xf1d4
+    uid: 237ee28b7e826b75a5b6f51ee3e2bfc1
+    search: ['hacker news', hn]
   -
     css: html5
     code: 0xf13b
@@ -2102,6 +2376,16 @@ glyphs:
     code: 0xf16d
     uid: 4c1ef492f1d2c39a2250ae457cee2a6e
     search: [instagramm]
+  -
+    css: joomla
+    code: 0xf1aa
+    uid: 8cd1b9899389237def726c08587a649f
+    search: [joomla]
+  -
+    css: jsfiddle
+    code: 0xf1cc
+    uid: 486f6d0a05aef9e65eeb07be26793bd3
+    search: [jsfiddle]
   -
     css: linkedin-squared
     code: 0xf30c
@@ -2124,10 +2408,25 @@ glyphs:
     uid: fcdc6d7a89771d2dbd38eb719aafb2ff
     search: [maxcdn]
   -
+    css: openid
+    code: 0xf19b
+    uid: da8a58b1deff73d1ba89ba1172ca4bcc
+    search: [openid]
+  -
     css: pagelines
     code: 0xf18c
     uid: bbf50a560f95a4cce5209d47e71cbc30
     search: [pagelines]
+  -
+    css: pied-piper-squared
+    code: 0xf1a7
+    uid: 92a4d74aa4e0549812301299020915a5
+    search: ['pied-piper']
+  -
+    css: pied-piper-alt
+    code: 0xf1a8
+    uid: 604733d6d4f7ae269a2ea97f4dc7c346
+    search: ['pied-piper']
   -
     css: pinterest-circled
     code: 0xf0d2
@@ -2138,7 +2437,23 @@ glyphs:
     code: 0xf0d3
     uid: 79689c4c425b7cdaa2746f510e81e27a
     search: [pinterest]
-  - 
+  -
+    css: qq
+    code: 0xf1d6
+    uid: 657ff9fe5df74f1993937aa4b19cf909
+    search: [qq]
+  -
+    css: reddit
+    code: 0xf1a1
+    uid: 9121e3eb89863f67c8bda378eea01a93
+    search: [reddit]
+
+  -
+    css: reddit-squared
+    code: 0xf1a2
+    uid: 4fc515c6a083b42e628273ab06cb2a90
+    search: [reddit]
+  -
     css: renren
     code: 0xf18b
     uid: cfa8a2588cab42a6ff7ba81eb4fec21b
@@ -2147,7 +2462,22 @@ glyphs:
     css: skype
     code: 0xf17e
     uid: 58a16628dcbd6456c61218f3d27591be
-    search: []
+    search: [skype]
+  -
+    css: slack
+    code: 0xf198
+    uid: 87276033a77d0b9b890125c3639e4f87
+    search: [slack]
+  -
+    css: soundclowd
+    code: 0xf1be
+    uid: dff942d95eb1b3f1be140e622d0a7c74
+    search: [soundclowd]
+  -
+    css: spotify
+    code: 0xf1bc
+    uid: fb4794d89b77ab712ad56c0dc4c76c6b
+    search: [spotify]
   -
     css: stackexchange
     code: 0xf18d
@@ -2158,6 +2488,31 @@ glyphs:
     code: 0xf16c
     uid: e1597911f34fea0a188ae51fe4a2d9a9
     search: [stackoverflow]
+  -
+    css: steam
+    code: 0xf1b6
+    uid: 2ec1790207a8ba67a7192c6af1eafec4
+    search: [steam]
+  -
+    css: steam-squared
+    code: 0xf1b7
+    uid: 727544621cb891115c99b4a4cfed01df
+    search: [steam]
+  -
+    css: stumbleupon
+    code: 0xf1a4
+    uid: 3958d12510001a1a172f088893506c27
+    search: [stumbleupon]
+  -
+    css: stumbleupon-circled
+    code: 0xf1a3
+    uid: 7377e22d1e1d2dd079f87b05fb6a11a3
+    search: [stumbleupon]
+  -
+    css: tencent-weibo
+    code: 0xf1d5
+    uid: d9b33592f56a02af69a36aa64ed452fc
+    search: [tencent-weibo]
   -
     css: trello
     code: 0xf181
@@ -2190,10 +2545,20 @@ glyphs:
     uid: 1f66490bf24c99e2c56b866d8fbd0372
     search: [vimeo]
   -
+    css: vine
+    code: 0xf1ca
+    uid: 676cf66256441f09e4934ae6378b3e2d
+    search: [vine]
+  -
     css: vkontakte
     code: 0xf189
     uid: f3d95e13eb43f3f6b8efe1eb424a1e3b
     search: [vkontakte]
+  -
+    css: wechat
+    code: 0xf1d7
+    uid: 34cb6ce62bf3f1efd59e2f5eb0d79f82
+    search: [wechat]
   -
     css: weibo
     code: 0xf18a
@@ -2204,6 +2569,11 @@ glyphs:
     code: 0xf17a
     uid: 8aff323697468c4a63993cde00386ec6
     search: [windows]
+  -
+    css: wordpress
+    code: 0xf19a
+    uid: 39f52f80e1864df5e5022d7f0f5ff86f
+    search: [wordpress]
   -
     css: xing
     code: 0xf168
@@ -2219,6 +2589,11 @@ glyphs:
     code: 0xf167
     uid: a9862b9d5197886c1ad693ecd7120b31
     search: [youtube]
+  -
+    css: yahoo
+    code: 0xf19e
+    uid: ba071f2b01f1fed40d8e2366434b6f42
+    search: [yahoo]
   -
     css: youtube-squared
     code: 0xf166
@@ -2241,4 +2616,3 @@ glyphs:
     code: 0x1f34b
     uid: 5e0191587645a9f5d514ed4b0a0e008a
     from: 0xf094
-
