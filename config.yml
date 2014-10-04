@@ -2469,10 +2469,10 @@ glyphs:
     uid: 87276033a77d0b9b890125c3639e4f87
     search: [slack]
   -
-    css: soundclowd
+    css: soundcloud
     code: 0xf1be
     uid: dff942d95eb1b3f1be140e622d0a7c74
-    search: [soundclowd]
+    search: [soundcloud]
   -
     css: spotify
     code: 0xf1bc
