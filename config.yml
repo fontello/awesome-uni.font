@@ -727,7 +727,13 @@ glyphs:
     search: [compass]
 
 
-  - css: trash
+  -
+    css: trash
+    code: 0xf1f8
+    uid: bbfb51903f40597f0b70fd75bc7b5cac
+    search: [trash]
+  -
+    css: trash-empty
     code: 0xe729
     uid: f48ae54adfb27d8ada53d0fd9e34ee10
     from: 0xf014
@@ -2228,12 +2234,6 @@ glyphs:
     code: 0xf1b3
     uid: af95ef0ddda80a78828c62d386506433
     search: [cubes]
-
-  -
-    css: trash
-    code: 0xf1f8
-    uid: bbfb51903f40597f0b70fd75bc7b5cac
-    search: [trash]
 
   -
     css: recycle
