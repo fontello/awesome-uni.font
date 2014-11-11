@@ -679,6 +679,16 @@ glyphs:
     code: 0xf0f3
     uid: 671f29fa10dda08074a4c6a341bb4f39
     search: [alert, bell, jingle]
+  -
+    css: bell-off
+    code: 0xf1f6
+    uid: 563683020e0bf9f22f3f055a69b5c57a
+    search: [bell]
+  -
+    css: bell-off-empty
+    code: 0xf1f7
+    uid: 8a074400a056c59d389f2d0517281bd5
+    search: [bell]
 
   -
     css: attention-alt
@@ -1403,6 +1413,11 @@ glyphs:
     from: 0xf012
     search: [broadcast, wifi, signal]
 
+  - css: wifi
+    code: 0xf1eb
+    uid: cd4bfdae4dc89b175ff49330ce29611a
+    search: [wifi, signal]
+
   - css: award
     code: 0x1f3c9
     uid: ab656e280958018a7859eba9a1eabbc7
@@ -1727,6 +1742,16 @@ glyphs:
     search: [tint]
 
   -
+    css: toggle-off
+    code: 0xf204
+    uid: 2a4e6c99b732a57da40e32fa2a7800a4
+    search: [toggle, switch, off, disable]
+  -
+    css: toggle-on
+    code: 0xf205
+    uid: 3256ef03b16e7ab51235bc7378b53bb5
+    search: [toggle, switch, on, enable]
+  -
     css: check
     code: 0x2611
     uid: dd6c6b221a1088ff8a9b9cd32d0b3dd5
@@ -1793,6 +1818,21 @@ glyphs:
     uid: 266d5d9adf15a61800477a5acf9a4462
     from: 0xf080
     search: [chart, bar, diagram]
+  -
+    css: chart-area
+    code: 0xf1fe
+    uid: 7d1ca956f4181a023de4b9efbed92524
+    search: [chart]
+  -
+    css: chart-pie
+    code: 0xf200
+    uid: 554ee96588a6c9ee632624cd051fe6fc
+    search: [chart, pie]
+  -
+    css: chart-line
+    code: 0xf201
+    uid: ea2d9a8c51ca42b38ef0d2a07f16d9a7
+    search: [chart]
 
   -
     css: ticket
@@ -1890,6 +1930,16 @@ glyphs:
     from: 0xf0d1
     uid: 7f3d8ff1d5f6ee019f0c00ed7a86caec
     search: [truck, auto, car]
+  -
+    css: bus
+    code: 0xf207
+    uid: 5b17c7263caa553039655f2fef81ecaf
+    search: [bus, auto]
+  -
+    css: bicycle
+    code: 0xf206
+    uid: 891d861cffd152a6474f01e77716d44e
+    search: [bicycle]
 
   -
     css: money
@@ -1926,6 +1976,11 @@ glyphs:
     code: 0xf158
     uid: 243424d56528e83e4fe9ef6e6347a2ef
     search: [rouble, rub, rur, ruble, money]
+  -
+    css: shekel
+    code: 0xf20b
+    uid: 589ae2cbc6d95cc74eb2dbd3fa9c9bcd
+    search: [ils, shekel, sheqel]
   -
     css: try
     code: 0xf195
@@ -2175,6 +2230,12 @@ glyphs:
     search: [cubes]
 
   -
+    css: trash
+    code: 0xf1f8
+    uid: bbfb51903f40597f0b70fd75bc7b5cac
+    search: [trash]
+
+  -
     css: recycle
     code: 0xf1b8
     uid: 288f930b765216bc04e475740331bdf5
@@ -2216,6 +2277,105 @@ glyphs:
     uid: 49ef53dc31aa9442d77f6ba4f559b528
     search: [bomb]
 
+  -
+    css: soccer-ball
+    code: 0xf1e3
+    uid: cf62866c0cfe3dd14455b381c724f8e1
+    search: [soccer, ball]
+
+  -
+    css: tty
+    code: 0xf1e4
+    uid: 3e1c9aac91dc062dc1af383d43f58ac5
+    search: [tty, teletype]
+
+  -
+    css: binoculars 
+    code: 0xf1e5
+    uid: 73ffeb70554099177620847206c12457
+    search: [binoculars ]
+
+  -
+    css: plug
+    code: 0xf1e6
+    uid: a14be0c7e0689076e2bdde97f8e309f9
+    search: [plug]
+
+  -
+    css: newspaper
+    code: 0xf1ea
+    uid: 032bd8bbd70adf90ead98b6813bfe446
+    search: [newspaper]
+
+  -
+    css: calc
+    code: 0xf1ec
+    uid: 1ee2aeb352153a403df4b441a8bc9bda
+    search: [calculator]
+
+  -
+    css: copyright
+    code: 0xf1f9
+    uid: 4a74a0f87d4089efe7aba1825bff4193
+    search: [copyright]
+
+  -
+    css: at
+    code: 0xf1fa
+    uid: 33194d4a025fbf12baca54579afe4c8e
+    search: [at]
+
+  -
+    css: eyedropper
+    code: 0xf1fb
+    uid: 88e6faa0f633ee23667f815689e82af3
+    search: [eyedropper, pipette]
+
+  -
+    css: brush
+    code: 0xf1fc
+    uid: fa9a0b7e788c2d78e24cef1de6b70e80
+    search: [brush]
+
+  -
+    css: birthday
+    code: 0xf1fd
+    uid: bc61ebcf2f5d8d08b1e9e62167df7617
+    search: [cake, birthday]
+
+
+  # Cards
+  -
+    css: cc-visa
+    code: 0xf1f0
+    uid: e3ed188ab8569b45cf41e74ce81aa86e
+    search: [visa, card]
+  -
+    css: cc-mastercard
+    code: 0xf1f1
+    uid: 4b1bfce8593a2c1c7d60b9145ada2adf
+    search: [mastercard, card]
+  -
+    css: cc-discover
+    code: 0xf1f2
+    uid: 6413682e05e1c65d13cb76fbca6d67e1
+    search: [discover, card]
+  -
+    css: cc-amex
+    code: 0xf1f3
+    uid: 4e7a8235533632f4df7ba7a2c68cd39d
+    search: [amex, card]
+  -
+    css: cc-paypal
+    code: 0xf1f4
+    uid: b83f99fd47bff831e25255c9bbbbabe7
+    search: [paypal, card]
+  -
+    css: cc-stripe
+    code: 0xf1f5
+    uid: 9698d35be5c118ec7521a98130fddc67
+    search: [stripe, card]
+
 
   # Logos
   -
@@ -2228,6 +2388,11 @@ glyphs:
     code: 0xf17b
     uid: 809f2374b759f5b9278ac6307e690ba4
     search: [android]
+  -
+    css: angellist
+    code: 0xf209
+    uid: 3fb64dab2b2e0a6cefa161387250c620
+    search: [angellist]
   -
     css: apple
     code: 0xf179
@@ -2253,6 +2418,11 @@ glyphs:
     code: 0xf172
     uid: 4ae56c66a1f93e28b8d4f866db2b018a
     search: [bitbucket]
+  -
+    css: cc
+    code: 0xf20a
+    uid: 66faf6c4e3b0e4e33f06171e30253e26
+    search: [cc]
   -
     css: codeopen
     code: 0xf1cb
@@ -2362,6 +2532,11 @@ glyphs:
     uid: f0cf7db1b03cb65adc450aa3bdaf8c4d
     search: [google, plus]
   -
+    css: gwallet
+    code: 0xf1ee
+    uid: 50fbbd926b2a64fcaf384788056c0e43
+    search: ["google wallet"]
+  -
     css: hacker-news
     code: 0xf1d4
     uid: 237ee28b7e826b75a5b6f51ee3e2bfc1
@@ -2377,6 +2552,11 @@ glyphs:
     uid: 4c1ef492f1d2c39a2250ae457cee2a6e
     search: [instagramm]
   -
+    css: ioxhost 
+    code: 0xf208
+    uid: 9b9e5f3ee9e3525808ed2afc83e8bb0b
+    search: [ioxhost ]
+  -
     css: joomla
     code: 0xf1aa
     uid: 8cd1b9899389237def726c08587a649f
@@ -2386,6 +2566,16 @@ glyphs:
     code: 0xf1cc
     uid: 486f6d0a05aef9e65eeb07be26793bd3
     search: [jsfiddle]
+  -
+    css: lastfm
+    code: 0xf202
+    uid: 5dcf6620378353c5b0089b12d961fedf
+    search: [lastfm]
+  -
+    css: lastfm-squared
+    code: 0xf203
+    uid: 32e335f0cd5c4fcc692af6fa742f6b7e
+    search: [lastfm]
   -
     css: linkedin-squared
     code: 0xf30c
@@ -2408,6 +2598,11 @@ glyphs:
     uid: fcdc6d7a89771d2dbd38eb719aafb2ff
     search: [maxcdn]
   -
+    css: meanpath
+    code: 0xf20c
+    uid: 9b2e17ef8fc33eb2a1c8b5953d51c595
+    search: [meanpath]
+  -
     css: openid
     code: 0xf19b
     uid: da8a58b1deff73d1ba89ba1172ca4bcc
@@ -2417,6 +2612,11 @@ glyphs:
     code: 0xf18c
     uid: bbf50a560f95a4cce5209d47e71cbc30
     search: [pagelines]
+  -
+    css: paypal
+    code: 0xf1ed
+    uid: 1d2b426ab6db81a58547ba13d8701ad8
+    search: [paypal]
   -
     css: pied-piper-squared
     code: 0xf1a7
@@ -2447,7 +2647,6 @@ glyphs:
     code: 0xf1a1
     uid: 9121e3eb89863f67c8bda378eea01a93
     search: [reddit]
-
   -
     css: reddit-squared
     code: 0xf1a2
@@ -2468,6 +2667,11 @@ glyphs:
     code: 0xf198
     uid: 87276033a77d0b9b890125c3639e4f87
     search: [slack]
+  -
+    css: slideshare
+    code: 0xf1e7
+    uid: be13b8c668eb18839d5d53107725f1de
+    search: [slideshare]
   -
     css: soundcloud
     code: 0xf1be
@@ -2529,6 +2733,11 @@ glyphs:
     uid: 5b79895d979c408282b4e92fa7db8e82
     search: [tumblr]
   -
+    css: twitch
+    code: 0xf1e8
+    uid: e70df9acbabaebfbbf9c1dbc3e52ab13
+    search: [twitch]
+  -
     css: twitter-squared
     code: 0xf304
     uid: 906348dc798a0d42715cc97c875e3ac6
@@ -2585,6 +2794,11 @@ glyphs:
     uid: f7dff44258aa565cbe35565be350b58d
     search: [xing]
   -
+    css: yelp
+    code: 0xf1e9
+    uid: 7a48de2ac7ca47c78d6c279996ee6250
+    search: [yelp]
+  -
     css: youtube
     code: 0xf167
     uid: a9862b9d5197886c1ad693ecd7120b31
@@ -2616,3 +2830,4 @@ glyphs:
     code: 0x1f34b
     uid: 5e0191587645a9f5d514ed4b0a0e008a
     from: 0xf094
+
