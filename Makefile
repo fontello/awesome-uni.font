@@ -34,8 +34,8 @@ font:
 	${BIN}/svg-font-create -c config.yml -i ./src/svg -o "./font/$(FONT_NAME).svg"
 	fontforge -c 'font = fontforge.open("./font/$(FONT_NAME).svg"); font.generate("./font/$(FONT_NAME).ttf")'
 
-	@if test `which ttfautohint` ; then \
-		ttfautohint --latin-fallback --hinting-limit=200 --hinting-range-max=50 --symbol ./font/$(FONT_NAME).ttf ./font/$(FONT_NAME)-hinted.ttf && \
+	#@if test `which ttfautohint` ; then \
+	#	ttfautohint --latin-fallback --hinting-limit=200 --hinting-range-max=50 --symbol ./font/$(FONT_NAME).ttf ./font/$(FONT_NAME)-hinted.ttf && \
 		mv ./font/$(FONT_NAME)-hinted.ttf ./font/$(FONT_NAME).ttf ; \
 		else \
 		echo "WARNING: ttfautohint not found. Font will not be hinted." >&2 ; \
