@@ -93,7 +93,7 @@ meta:
 
 
 font:
-  version: "4.1.0"
+  version: "4.3.0"
 
   # use !!!small!!! letters a-z, or Opera will fail under OS X
   # fontname will be also used as file name.
@@ -192,6 +192,16 @@ glyphs:
     from: 0xf007
     search: [profile, contact, user]
   -
+    css: user-plus
+    code: 0xf234
+    uid: 1bafeeb1808a5fe24484c7890096901a
+    search: [user, plus, add]
+  -
+    css: user-times
+    code: 0xf235
+    uid: fb1c59faa93eb6e2248c2456625b08a2
+    search: [user, remove, delete]
+  -
     css: users
     code: 0x1f465
     from: 0xf0c0
@@ -212,6 +222,11 @@ glyphs:
     code: 0xf1ae
     uid: c2314ed1d2314b89f9285c53bcbf2548
     search: [child, people]
+  -
+    css: user-secret
+    code: 0xf21b
+    uid: f9c8ea86275ca16128235c6452b67b8e
+    search: [secret, private, user]
 
 
   - css: video
@@ -906,6 +921,16 @@ glyphs:
     uid: 9affc98d652b86628d650ee58dbf0357
     from: 0xf07a
     search: [basket, shopping, cart]
+  -
+    css: cart-plus
+    code: 0xf217
+    uid: cddbeffea9d90c5db93d5d3e77b8893e
+    search: [cart, basket]
+  -
+    css: cart-arrow-down
+    code: 0xf218
+    uid: 93c35534e6b079466c4676cdedcdb7c1
+    search: [cart, basket]
 
   -
     css: calendar
@@ -1543,6 +1568,12 @@ glyphs:
     from: 0xf032
     search: [editor, bold]
 
+  -
+    css: medium
+    code: 0xf23a
+    uid: bf09b1c6561dc0ced707476e2cd83d29
+    search: [medium]
+
   - css: italic
     code: 0xe77b
     uid: a8cb1c217f02b073db3670c061cc54d2
@@ -1946,6 +1977,26 @@ glyphs:
     code: 0xf206
     uid: 891d861cffd152a6474f01e77716d44e
     search: [bicycle]
+  -
+    css: motorcycle
+    code: 0xf21c
+    uid: 326dd5dc5899787161184614d04a50b9
+    search: [motorcycle]
+  -
+    css: train
+    code: 0xf238
+    uid: 4df54de7f9081aefcc1476068d4464e9
+    search: [train]
+  -
+    css: subway
+    code: 0xf239
+    uid: 26667777684de4808cedd3783834356f
+    search: [subway]
+  -
+    css: ship
+    code: 0xf21a
+    uid: 3bf0956ae356f79d805fb17f4a523f24
+    search: [ship, boat, swim]
 
   -
     css: money
@@ -2002,6 +2053,11 @@ glyphs:
     code: 0xf15a
     uid: 2cb15eb2b295ee3c33fab1530e18a924
     search: [bitcoin, money]
+  -
+    css: viacoin
+    code: 0xf237
+    uid: 77b6b5ad1966970971c43e40e8d10772
+    search: [viacoin]
 
   -
     css: sort
@@ -2101,6 +2157,11 @@ glyphs:
     uid: 5590d2f643b64d2d0757ae660f9c24cb
     search: [stethoscope]
   -
+    css: heartbeat
+    code: 0xf21e
+    uid: d84a06c5ce6da9ebdc9b0a5cb94db4c4
+    search: [heartbeat]
+  -
     css: ambulance
     code: 0xf0f9
     uid: 6dbf07228006788a96eb6244b3591970
@@ -2115,6 +2176,11 @@ glyphs:
     code: 0xf0fd
     uid: 6f41d9b99564a01f1fde503b7f03bf1a
     search: [hospital]
+  -
+    css: bed
+    code: 0xf236
+    uid: df9d9b2fb366c10427ffb727943db912
+    search: [bed, sleep]
   -
     css: hospital
     code: 0xf0f8
@@ -2254,6 +2320,12 @@ glyphs:
     search: [database]
 
   -
+    css: server
+    code: 0xf233
+    uid: d59ff824282fc6edaeca991deab522aa
+    search: [server]
+
+  -
     css: lifebuoy
     code: 0xf1cd
     uid: ebffa4e734c8379ffee4fbfe49264d94
@@ -2290,7 +2362,7 @@ glyphs:
     search: [tty, teletype]
 
   -
-    css: binoculars 
+    css: binoculars
     code: 0xf1e5
     uid: 73ffeb70554099177620847206c12457
     search: [binoculars ]
@@ -2342,6 +2414,81 @@ glyphs:
     code: 0xf1fd
     uid: bc61ebcf2f5d8d08b1e9e62167df7617
     search: [cake, birthday]
+
+  -
+    css: diamond
+    code: 0xf219
+    uid: f85affb51c357be83d187344c8c6e35c
+    search: [diamond]
+
+  -
+    css: street-view
+    code: 0xf21d
+    uid: 3c7eb0c1678e6fa93cc4264bad3150d6
+    search: [street, view]
+
+
+  # Astrology
+  -
+    css: venus
+    code: 0xf221
+    uid: 95501182783a570088194c41bc63543b
+    search: [venus, astrology]
+  -
+    css: mars
+    code: 0xf222
+    uid: 5d5d8995aa777cb59c88671e89ab5ced
+    search: [mars, astrology]
+  -
+    css: mercury
+    code: 0xf223
+    uid: c3c269bbbf641affca7e52beb39f7909
+    search: [mercury, astrology]
+  -
+    css: transgender
+    code: 0xf224
+    uid: d589e468da8556b0701206cfdfcfc567
+    search: [transgender, astrology]
+  -
+    css: transgender-alt
+    code: 0xf225
+    uid: 5a77a57792f5bfd20fb80827af089d17
+    search: [transgender, astrology]
+  -
+    css: venus-double
+    code: 0xf226
+    uid: 6c6165b9b97c471cc4c6366f9cf84537
+    search: [venus, astrology]
+  -
+    css: mars-double
+    code: 0xf227
+    uid: 3bc42da674bdbebcb6471ceb42966d33
+    search: [mars, astrology]
+  -
+    css: venus-mars
+    code: 0xf228
+    uid: 4ced65e721620e2b3e77b02d54af4100
+    search: [venus, mars, astrology]
+  -
+    css: mars-stroke
+    code: 0xf229
+    uid: 6d4f6e98584c8b8ec08bd47a96ed86c4
+    search: [mars, astrology]
+  -
+    css: mars-stroke-v
+    code: 0xf22a
+    uid: 4162b5adba555571ca1be76baa365b9c
+    search: [mars, astrology]
+  -
+    css: mars-stroke-h
+    code: 0xf22b
+    uid: 10bd8ed7a393f773e81d145ad5523beb
+    search: [mars, astrology]
+  -
+    css: neuter
+    code: 0xf22c
+    uid: 14896a85fab311b3a5a9b614fe8c6874
+    search: [neuter, astrology]
 
 
   # Cards
@@ -2419,6 +2566,11 @@ glyphs:
     uid: 4ae56c66a1f93e28b8d4f866db2b018a
     search: [bitbucket]
   -
+    css: buysellads
+    code: 0xf20d
+    uid: 18d3287c351d9799fedb221e4923b2d2
+    search: [buysellads]
+  -
     css: cc
     code: 0xf20a
     uid: 66faf6c4e3b0e4e33f06171e30253e26
@@ -2429,10 +2581,20 @@ glyphs:
     uid: 76675011e906d50af404186b489fc76f
     search: [codeopen]
   -
+    css: connectdevelop
+    code: 0xf20e
+    uid: aa4ded7a2d22e21c3cfe775efe267120
+    search: [connectdevelop]
+  -
     css: css3
     code: 0xf13c
     uid: 01c946ce2ed5500e0a918f2b3a7d1923
     search: [css3]
+  -
+    css: dashcube
+    code: 0xf210
+    uid: 71e046578954f177921bcf5b241d0d95
+    search: [dashcube]
   -
     css: delicious
     code: 0xf1a5
@@ -2475,10 +2637,20 @@ glyphs:
     from: 0xf082
     search: [facebook]
   -
+    css: facebook-official
+    code: 0xf230
+    uid: 6cc7af3e5b55720bcb6ef68372ce24be
+    search: [facebook]
+  -
     css: flickr
     code: 0xf16e
     uid: 649004fb1ed50395a33c3780236ba8aa
     search: [flickr]
+  -
+    css: forumbee
+    code: 0xf211
+    uid: 7b7116fa67e5e3f4c98e5928ebe3f6ae
+    search: [forumbee]
   -
     css: foursquare
     code: 0xf180
@@ -2552,7 +2724,7 @@ glyphs:
     uid: 4c1ef492f1d2c39a2250ae457cee2a6e
     search: [instagramm]
   -
-    css: ioxhost 
+    css: ioxhost
     code: 0xf208
     uid: 9b9e5f3ee9e3525808ed2afc83e8bb0b
     search: [ioxhost ]
@@ -2576,6 +2748,11 @@ glyphs:
     code: 0xf203
     uid: 32e335f0cd5c4fcc692af6fa742f6b7e
     search: [lastfm]
+  -
+    css: leanpub
+    code: 0xf212
+    uid: f78244d4753a3aa2be87d56b858d148d
+    search: [leanpub]
   -
     css: linkedin-squared
     code: 0xf30c
@@ -2628,6 +2805,11 @@ glyphs:
     uid: 604733d6d4f7ae269a2ea97f4dc7c346
     search: ['pied-piper']
   -
+    css: pinterest
+    code: 0xf231
+    uid: cc399e4597f157dcbf016be0b7407fea
+    search: [pinterest]
+  -
     css: pinterest-circled
     code: 0xf0d2
     uid: da851b7c1f84ee83f93b29ae613558dc
@@ -2657,6 +2839,26 @@ glyphs:
     code: 0xf18b
     uid: cfa8a2588cab42a6ff7ba81eb4fec21b
     search: [renren]
+  -
+    css: sellsy
+    code: 0xf213
+    uid: 281020881dd80ef01d0369bf4b80ebef
+    search: [sellsy]
+  -
+    css: shirtsinbulk
+    code: 0xf214
+    uid: 770fafc9392963133bb03b4ad4ed3a28
+    search: [shirtsinbulk]
+  -
+    css: simplybuilt
+    code: 0xf215
+    uid: 12b38aeedfa5b6672936432bc7d3082c
+    search: [simplybuilt]
+  -
+    css: skyatlas
+    code: 0xf216
+    uid: a0afa21fe64100c16eac19f4e1615c2a
+    search: [skyatlas]
   -
     css: skype
     code: 0xf17e
@@ -2764,6 +2966,11 @@ glyphs:
     uid: f3d95e13eb43f3f6b8efe1eb424a1e3b
     search: [vkontakte]
   -
+    css: whatsapp
+    code: 0xf232
+    uid: 9d3e9faf68fd4e12def853f0d4e1173b
+    search: [whatsapp]
+  -
     css: wechat
     code: 0xf1d7
     uid: 34cb6ce62bf3f1efd59e2f5eb0d79f82
@@ -2830,4 +3037,3 @@ glyphs:
     code: 0x1f34b
     uid: 5e0191587645a9f5d514ed4b0a0e008a
     from: 0xf094
-
