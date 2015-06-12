@@ -1798,7 +1798,7 @@ glyphs:
     css: check-empty
     code: 0xf096
     uid: 4b900d04e8ab8c82f080c1cfbac5772c
-    search: [check, empty]
+    search: [check, empty, square]
   -
     css: circle
     code: 0xf111
@@ -3031,7 +3031,7 @@ glyphs:
     css: blank
     code: 0xf0c8
     uid: 2c2ca8a96b31781c9c8056d05c0a8980
-    search: [blank]
+    search: [blank, square]
   -
     css: lemon
     code: 0x1f34b
