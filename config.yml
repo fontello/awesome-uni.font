@@ -1766,11 +1766,11 @@ glyphs:
     from: 0xf02d
     search: [book]
 
-  - css: ajust
+  - css: adjust
     code: 0xe793
     uid: ca90da02d2c6a3183f2458e4dc416285
     from: 0xf042
-    search: [ajust, contrast]
+    search: [adjust, contrast]
 
   - css: tint
     code: 0xe794
