@@ -22,7 +22,10 @@ Build additional software (ttf2eot, ttfautohint):
 
 ### Mac
 
-TBD. Anyone, please help.
+Install dependencies (fontforge)
+
+    npm install
+    brew install fontforge
 
 
 ### Windows

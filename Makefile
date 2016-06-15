@@ -36,17 +36,19 @@ font:
 
 	#@if test `which ttfautohint` ; then \
 	#	ttfautohint --latin-fallback --hinting-limit=200 --hinting-range-max=50 --symbol ./font/$(FONT_NAME).ttf ./font/$(FONT_NAME)-hinted.ttf && \
-		mv ./font/$(FONT_NAME)-hinted.ttf ./font/$(FONT_NAME).ttf ; \
-		else \
-		echo "WARNING: ttfautohint not found. Font will not be hinted." >&2 ; \
-		fi
+	#	mv ./font/$(FONT_NAME)-hinted.ttf ./font/$(FONT_NAME).ttf ; \
+	#	else \
+	#	echo "WARNING: ttfautohint not found. Font will not be hinted." >&2 ; \
+	#	fi
 
 	${BIN}/ttf2eot "./font/$(FONT_NAME).ttf" "./font/$(FONT_NAME).eot"
 	${BIN}/ttf2woff "./font/$(FONT_NAME).ttf" "./font/$(FONT_NAME).woff"
 
 
 html:
-	@${BIN}/jade -O '$(shell node_modules/.bin/js-yaml -j config.yml)' ./src/demo/demo.jade -o ./font
+	@${BIN}/js-yaml -j config.yml > config.json
+	@${BIN}/jade -O ./config.json ./src/demo/demo.jade -o ./font
+	@rm config.json
 
 
 gh-pages:
@@ -62,7 +64,7 @@ gh-pages:
 		git commit -q -m 'refreshed gh-pages'
 	cd ${TMP_PATH} && \
 		git remote add remote ${REMOTE_REPO} && \
-		git push --force remote +master:gh-pages 
+		git push --force remote +master:gh-pages
 	rm -rf ${TMP_PATH}
 
 
