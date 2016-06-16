@@ -64,7 +64,7 @@ gh-pages:
 		git commit -q -m 'refreshed gh-pages'
 	cd ${TMP_PATH} && \
 		git remote add remote ${REMOTE_REPO} && \
-		git push --force remote +master:gh-pages 
+		git push --force remote +master:gh-pages
 	rm -rf ${TMP_PATH}
 
 
