@@ -1,4 +1,4 @@
-!!! 5
+doctype html
 html
   head
     //if lt IE 9
@@ -6,6 +6,7 @@ html
 
     meta(charset='UTF-8')
 
+    != '<style>'
     :stylus
       @import "bootstrap"
 
@@ -34,6 +35,9 @@ html
       .the-icons
         font-size 14px
         line-height 24px
+        overflow hidden
+        white-space nowrap
+        text-overflow ellipsis
 
       .switch
         position absolute
@@ -51,11 +55,10 @@ html
       .i-code
         display none
 
-    | <style type="text/css">
     include demo.codes.jade
-    | </style>
+    != '</style>'
 
-    script
+    script(type="text/javascript").
       function toggleCodes(on) {
         var obj = document.getElementById('icons');
 

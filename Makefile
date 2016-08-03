@@ -1,4 +1,3 @@
-PROJECT     := $(notdir ${PWD})
 FONT_NAME   := fontawesome
 
 
@@ -7,12 +6,9 @@ FONT_NAME   := fontawesome
 ################################################################################
 
 
-TMP_PATH    := /tmp/${PROJECT}-$(shell date +%s)
+TMP_PATH    := /tmp/$(FONT_NAME)-$(shell date +%s)
 REMOTE_NAME ?= origin
 REMOTE_REPO ?= $(shell git config --get remote.${REMOTE_NAME}.url)
-
-PWD  := $(shell pwd)
-BIN  := ./node_modules/.bin
 
 
 dist: font html
@@ -20,19 +16,15 @@ dist: font html
 dump:
 	rm -rf ./src/svg/
 	mkdir ./src/svg/
-	${BIN}/svg-font-dump -c `pwd`/config.yml -f -i ./src/original/fontawesome-webfont.svg -o ./src/svg/ -d diff.yml
-	${BIN}/svgo --config `pwd`/dump.svgo.yml -f ./src/svg
+	./node_modules/.bin/svg-font-dump -c `pwd`/config.yml -f -i ./src/original/fontawesome-webfont.svg -o ./src/svg/ -d diff.yml
+	rm -f ./src/svg/glyph__25fc.svg
+	./node_modules/.bin/svgo --config `pwd`/dump.svgo.yml -f ./src/svg
 
 
 font:
-	@if test ! -d node_modules ; then \
-		echo "dependencies not found:" >&2 ; \
-		echo "  make dependencies" >&2 ; \
-		exit 128 ; \
-		fi
-
-	${BIN}/svg-font-create -c config.yml -i ./src/svg -o "./font/$(FONT_NAME).svg"
-	fontforge -c 'font = fontforge.open("./font/$(FONT_NAME).svg"); font.generate("./font/$(FONT_NAME).ttf")'
+	./node_modules/.bin/svg-font-create -c config.yml -i ./src/svg -o "./font/$(FONT_NAME).svg"
+	#fontforge -c 'font = fontforge.open("./font/$(FONT_NAME).svg"); font.generate("./font/$(FONT_NAME).ttf")'
+	./node_modules/.bin/svg2ttf "./font/$(FONT_NAME).svg" "./font/$(FONT_NAME).ttf"
 
 	#@if test `which ttfautohint` ; then \
 	#	ttfautohint --latin-fallback --hinting-limit=200 --hinting-range-max=50 --symbol ./font/$(FONT_NAME).ttf ./font/$(FONT_NAME)-hinted.ttf && \
@@ -41,13 +33,13 @@ font:
 	#	echo "WARNING: ttfautohint not found. Font will not be hinted." >&2 ; \
 	#	fi
 
-	${BIN}/ttf2eot "./font/$(FONT_NAME).ttf" "./font/$(FONT_NAME).eot"
-	${BIN}/ttf2woff "./font/$(FONT_NAME).ttf" "./font/$(FONT_NAME).woff"
+	./node_modules/.bin/ttf2eot "./font/$(FONT_NAME).ttf" "./font/$(FONT_NAME).eot"
+	./node_modules/.bin/ttf2woff "./font/$(FONT_NAME).ttf" "./font/$(FONT_NAME).woff"
 
 
 html:
-	@${BIN}/js-yaml -j config.yml > config.json
-	@${BIN}/jade -O ./config.json ./src/demo/demo.jade -o ./font
+	@./node_modules/.bin/js-yaml -j config.yml > config.json
+	@./node_modules/.bin/jade -O ./config.json ./src/demo/demo.jade -o ./font
 	@rm config.json
 
 

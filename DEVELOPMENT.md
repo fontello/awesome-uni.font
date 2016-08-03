@@ -6,31 +6,9 @@ Set of scripts to easily build webfonts from SVG images
 Installation
 ------------
 
-### Ubuntu
-
-**(!)** Use Ubuntu **12.04**. Or you will have to manually install fresh
-freetype library, to build ttfautohint.
-
-Install dependencies (fontforge & python modules):
-
-    sudo make dev-deps
-
-Build additional software (ttf2eot, ttfautohint):
-
-    make support
-
-
-### Mac
-
-Install dependencies (fontforge)
-
-    npm install
-    brew install fontforge
-
-
-### Windows
-
-TBD. Anyone, please help.
+```sh
+npm install
+```
 
 
 Updating font to the newest Font Awesome version
@@ -42,9 +20,8 @@ Updating font to the newest Font Awesome version
 2. Place the new Font Awesome's [`fonts/fontawesome-webfont.svg`](https://github.com/FortAwesome/Font-Awesome/blob/master/fonts/fontawesome-webfont.svg) in `src/original`
 3. Run `make dump` to create the corresponding SVG glyph files in `src/svg`
 4. Any new glyph requiring an entry in `config.yml` will be found in a temporary `diff.yml` file; check Font Awesome's [`less/variables.less`](https://github.com/FortAwesome/Font-Awesome/blob/master/less/variables.less) to find the name of the glyph matching the corresponding `code:` in `diff.yml`, then copy the updated entry to `config.yml`
-5. Once `config.yml` has been updated with all new glyphs, empty the contents of `src/svg` (say `rm -fr src/svg/*.svg`) and run `make dump` once again to make sure all temporary files (say `src/svg/glyph__f22d.svg`) are replaced with properly named glyphs (say `src/svg/genderless.svg`)
-6. Edit css/html templates, if needed.
-7. Run `make`
+5. Once `config.yml` has been updated with all new glyphs, run `make dump` once again to make sure all temporary files (say `src/svg/glyph__f22d.svg`) are replaced with properly named glyphs (say `src/svg/genderless.svg`)
+6. Run `make`
 
 Generated data will be placed in `./font`
 
