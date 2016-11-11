@@ -93,7 +93,7 @@ meta:
 
 
 font:
-  version: "4.6.3"
+  version: "4.7.0"
 
   # use !!!small!!! letters a-z, or Opera will fail under OS X
   # fontname will be also used as file name.
@@ -3481,3 +3481,212 @@ glyphs:
     code: 0xf2b4
     uid: 3c8e3fe48360de90a1ff1267411aae88
     search: [fa]
+
+  # --------------------------------------------------
+  # 4.7.0
+  # --------------------------------------------------
+
+  - css: handshake-o
+    code: 0xF2B5
+    uid: 9fecfcfe680a469caedeeb40641a479f
+    search: []
+
+  - css: envelope-open
+    code: 0xF2B6
+    uid: f89739d9df5c9e70ece9be9cdf66abb6
+    search: []
+
+  - css: envelope-open-o
+    code: 0xF2B7
+    uid: 57ae6bdecc7044555daa84354a8dfe49
+    search: []
+
+  - css: linode
+    code: 0xF2B8
+    uid: 0259fec71de1f22e70877ca024b634fd
+    search: []
+
+  - css: address-book
+    code: 0xF2B9
+    uid: 15899c11210bc9f45fc15a507789f6be
+    search: []
+
+  - css: address-book-o
+    code: 0xF2BA
+    uid: 693e13611b84512c92e6115e0c31934d
+    search: []
+
+  - css: address-card
+    code: 0xF2BB
+    uid: 79d27b578931fd441a6dc885c9dd88a6
+    search: [vcard]
+
+  - css: address-card-o
+    code: 0xF2BC
+    uid: 68eb56470b836f19335231578515153e
+    search: [vcard-o]
+
+  - css: user-circle
+    code: 0xF2BD
+    uid: 818981e2ad316f18ae61cfa805d41309
+    search: []
+
+  - css: user-circle-o
+    code: 0xF2BE
+    uid: 3fce1eca43f917c8f23e532749abae5d
+    search: []
+
+  - css: user-o
+    code: 0xF2C0
+    uid: b86df50a2d898bfcd371fa86c0b8b2fb
+    search: []
+
+  - css: id-badge
+    code: 0xF2C1
+    uid: b2cc036e1ba44934896c345436ac44d1
+    search: []
+
+  - css: id-card
+    code: 0xF2C2
+    uid: 37b41cdae5ec9dab40e0c5bfff8a0ec8
+    search: [drivers-license]
+
+  - css: id-card-o
+    code: 0xF2C3
+    uid: 2e6301ac94d0d51566727b9199259451
+    search: [drivers-license-o]
+
+  - css: quora
+    code: 0xF2C4
+    uid: 2726ee8140faa11aba6a4183a8a8b903
+    search: []
+
+  - css: free-code-camp
+    code: 0xF2C5
+    uid: 8dc7142e4848751b5d2b0200ba77b991
+    search: []
+
+  - css: telegram
+    code: 0xF2C6
+    uid: 531359183f9fedb14b23666f1308591f
+    search: []
+
+  - css: thermometer
+    code: 0xF2C7
+    uid: 07c8bfac1a39b6c62bc83e23a3c4b706
+    search: [thermometer-full, thermometer-4]
+
+  - css: thermometer-3
+    code: 0xF2C8
+    uid: d7ef51ac5d8223e1c4e6551b833a6b44
+    search: [thermometer-three-quarters]
+
+  - css: thermometer-2
+    code: 0xF2C9
+    uid: c22930d29b554d41c0ef882aafd3f8c9
+    search: [thermometer-half]
+
+  - css: thermometer-quarter
+    code: 0xF2CA
+    uid: f50506878717cd58f94b689daa79bfae
+    search: [thermometer-1]
+
+  - css: thermometer-0
+    code: 0xF2CB
+    uid: bc89c320cf57f6c88f1ae7248e12a28f
+    search: [thermometer-empty]
+
+  - css: shower
+    code: 0xF2CC
+    uid: 71abe0fa648a63c00b5222c37345b38c
+    search: []
+
+  - css: bath
+    code: 0xF2CD
+    uid: 5d24e595104bfd7117db134253fc9ca1
+    search: [bathtub, s15]
+
+  - css: podcast
+    code: 0xF2CE
+    uid: af4312b5501867fa089ec3afeece5630
+    search: []
+
+  - css: window-maximize
+    code: 0xF2D0
+    uid: 07f0832c07f3d9713fffb06c8bffa027
+    search: []
+
+  - css: window-minimize
+    code: 0xF2D1
+    uid: 04f022b8bd044d4ccfffd3887ff72088
+    search: []
+
+  - css: window-restore
+    code: 0xF2D2
+    uid: d0e62145dbf40f30e47b3819b8b43a8f
+    search: []
+
+  - css: window-close
+    code: 0xF2D3
+    uid: 7394501fc0b17cb7bda99538f92e26d6
+    search: [times-rectangle]
+
+  - css: window-close-o
+    code: 0xF2D4
+    uid: 316d3c537e21cb6b56c466bb615b32e6
+    search: [times-rectangle-o]
+
+  - css: bandcamp
+    code: 0xF2D5
+    uid: 50eb1aca5fe19bd9eaa1257117cb0419
+    search: []
+
+  - css: grav
+    code: 0xF2D6
+    uid: 527f48749d1d339c73a09fd5f12f77c0
+    search: []
+
+  - css: etsy
+    code: 0xF2D7
+    uid: 0abcdfbaa2ece1cbd5a7896e8cfc4668
+    search: []
+
+  - css: imdb
+    code: 0xF2D8
+    uid: eea8064584ca4397576380d9de87bfc3
+    search: []
+
+  - css: ravelry
+    code: 0xF2D9
+    uid: aa34496baad01bf631deaf33a2acbf85
+    search: []
+
+  - css: eercast
+    code: 0xF2DA
+    uid: 4f0e633d65949512c49f9a95c959b5a0
+    search: []
+
+  - css: microchip
+    code: 0xF2DB
+    uid: 1cb3652ffb3492344fa3a675c3ff3290
+    search: []
+
+  - css: snowflake-o
+    code: 0xF2DC
+    uid: 56f2eac13d2b397ff4a54dc38f783b95
+    search: []
+
+  - css: superpowers
+    code: 0xF2DD
+    uid: d38d01d4665f7aaaaddd789800ef7669
+    search: []
+
+  - css: wpexplorer
+    code: 0xF2DE
+    uid: 74195f8d61ee77a2ba6df97c9ace11e8
+    search: []
+
+  - css: meetup
+    code: 0xF2E0
+    uid: 322a3317bf081dd6a78d5d6a620e1dd5
+    search: []
