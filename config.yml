@@ -2444,10 +2444,10 @@ glyphs:
     uid: 66faf6c4e3b0e4e33f06171e30253e26
     search: [cc]
 
-  - css: codeopen
+  - css: codepen
     code: 0xf1cb
     uid: 76675011e906d50af404186b489fc76f
-    search: [codeopen]
+    search: [codepen]
 
   - css: connectdevelop
     code: 0xf20e
